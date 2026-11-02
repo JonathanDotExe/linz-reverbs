@@ -21,6 +21,7 @@ public:
     ~LinzReverbsAudioProcessor() override;
 
     //==============================================================================
+    // processing
     void prepareToPlay (double sampleRate, int samplesPerBlock) override;
     void releaseResources() override;
 
@@ -31,10 +32,12 @@ public:
     void processBlock (juce::AudioBuffer<float>&, juce::MidiBuffer&) override;
 
     //==============================================================================
+    // gui
     juce::AudioProcessorEditor* createEditor() override;
     bool hasEditor() const override;
 
     //==============================================================================
+    // metadata
     const juce::String getName() const override;
 
     bool acceptsMidi() const override;
@@ -43,6 +46,7 @@ public:
     double getTailLengthSeconds() const override;
 
     //==============================================================================
+    // presets
     int getNumPrograms() override;
     int getCurrentProgram() override;
     void setCurrentProgram (int index) override;
@@ -50,10 +54,20 @@ public:
     void changeProgramName (int index, const juce::String& newName) override;
 
     //==============================================================================
+    // state
     void getStateInformation (juce::MemoryBlock& destData) override;
     void setStateInformation (const void* data, int sizeInBytes) override;
 
 private:
     //==============================================================================
+    enum {
+        oscIndex,
+        gainIndex
+    };
+    
+    juce::dsp::ProcessorChain<
+        juce::dsp::Oscillator<double>,
+        juce::dsp::Gain<double>> processorChain;
+    
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (LinzReverbsAudioProcessor)
 };

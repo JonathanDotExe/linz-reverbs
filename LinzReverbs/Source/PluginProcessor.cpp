@@ -10,6 +10,7 @@
 #include "PluginEditor.h"
 
 //==============================================================================
+// constructor/config
 LinzReverbsAudioProcessor::LinzReverbsAudioProcessor()
 #ifndef JucePlugin_PreferredChannelConfigurations
      : AudioProcessor (BusesProperties()
@@ -22,6 +23,11 @@ LinzReverbsAudioProcessor::LinzReverbsAudioProcessor()
                        )
 #endif
 {
+    auto& osc = processorChain.template get<oscIndex>();
+    osc.initialise ([] (double x) { return std::sin (x); });
+    osc.setFrequency(440.0);
+    auto& gain = processorChain.template get<gainIndex>();
+    gain.setGainLinear(1);
 }
 
 LinzReverbsAudioProcessor::~LinzReverbsAudioProcessor()
@@ -29,6 +35,7 @@ LinzReverbsAudioProcessor::~LinzReverbsAudioProcessor()
 }
 
 //==============================================================================
+// metadata
 const juce::String LinzReverbsAudioProcessor::getName() const
 {
     return JucePlugin_Name;
@@ -63,9 +70,10 @@ bool LinzReverbsAudioProcessor::isMidiEffect() const
 
 double LinzReverbsAudioProcessor::getTailLengthSeconds() const
 {
-    return 0.0;
+    return 0.0; //TODO reverb tail length
 }
 
+// presets
 int LinzReverbsAudioProcessor::getNumPrograms()
 {
     return 1;   // NB: some hosts don't cope very well if you tell them there are 0 programs,
@@ -91,16 +99,27 @@ void LinzReverbsAudioProcessor::changeProgramName (int index, const juce::String
 }
 
 //==============================================================================
+// processing
 void LinzReverbsAudioProcessor::prepareToPlay (double sampleRate, int samplesPerBlock)
 {
     // Use this method as the place to do any pre-playback
     // initialisation that you need..
+    
+    juce::dsp::ProcessSpec spec;
+
+    spec.sampleRate = sampleRate;
+    spec.maximumBlockSize = static_cast<juce::uint32>(samplesPerBlock);
+    spec.numChannels = static_cast<juce::uint32>(getTotalNumOutputChannels());
+    
+    processorChain.prepare(spec);
 }
 
 void LinzReverbsAudioProcessor::releaseResources()
 {
     // When playback stops, you can use this as an opportunity to free up any
     // spare memory, etc.
+    
+    processorChain.reset();
 }
 
 #ifndef JucePlugin_PreferredChannelConfigurations
@@ -156,6 +175,14 @@ void LinzReverbsAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer, 
 
         // ..do something to the data...
     }
+
+    buffer.clear();
+
+    juce::dsp::AudioBlock<float> block(buffer);
+    juce::dsp::ProcessContextReplacing<float> context(block);
+
+    auto& osc = processorChain.template get<oscIndex>();
+    osc.process(context);
 }
 
 //==============================================================================
