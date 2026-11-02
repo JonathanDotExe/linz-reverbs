@@ -4,10 +4,47 @@
               addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1">
   <MAINGROUP id="Y52shR" name="LinzReverbs">
     <GROUP id="{98D81D9F-5896-3C0F-00C3-E4486CC1A837}" name="Resources">
-      <FILE id="OsHua5" name="JKU_Garage_Long.wav" compile="0" resource="1"
-            file="../../../Producing/IRs/Linz Reverbs/JKU Parkgarage/JKU_Garage_Long.wav"/>
+      <GROUP id="{1241F73E-C520-094E-12E2-9DCFBBCF8506}" name="IRs">
+        <GROUP id="{C628E015-DD16-3CE9-368B-50CE68E12A28}" name="HS10">
+          <FILE id="m9Pmii" name="JKU_HS10_Clap1.wav" compile="0" resource="1"
+                file="../IRs/HS10/JKU_HS10_Clap1.wav"/>
+          <FILE id="rtYU88" name="JKU_HS10_Clap2.wav" compile="0" resource="1"
+                file="../IRs/HS10/JKU_HS10_Clap2.wav"/>
+          <FILE id="fRart6" name="JKU_HS10_Long.wav" compile="0" resource="1"
+                file="../IRs/HS10/JKU_HS10_Long.wav"/>
+          <FILE id="dAZKhJ" name="JKU_HS10_Short.wav" compile="0" resource="1"
+                file="../IRs/HS10/JKU_HS10_Short.wav"/>
+        </GROUP>
+        <GROUP id="{9A4139BA-BDA9-6D9E-CF68-4343CDDC430B}" name="JKU Parkgarage">
+          <FILE id="VzWcPf" name="JKU_Garage_Clap1.wav" compile="0" resource="1"
+                file="../IRs/JKU Parkgarage/JKU_Garage_Clap1.wav"/>
+          <FILE id="LSYVVb" name="JKU_Garage_Clap2.wav" compile="0" resource="1"
+                file="../IRs/JKU Parkgarage/JKU_Garage_Clap2.wav"/>
+          <FILE id="NtkUOm" name="JKU_Garage_Long.wav" compile="0" resource="1"
+                file="../IRs/JKU Parkgarage/JKU_Garage_Long.wav"/>
+          <FILE id="SAdXM6" name="JKU_Garage_Short.wav" compile="0" resource="1"
+                file="../IRs/JKU Parkgarage/JKU_Garage_Short.wav"/>
+        </GROUP>
+        <GROUP id="{F2DB3B48-01FD-E737-1E9D-7FB03109089F}" name="Under The Bridge">
+          <FILE id="ZIfgdM" name="Under_The_Bridge_Clap_2.wav" compile="0" resource="1"
+                file="../IRs/Under The Bridge/Under_The_Bridge_Clap_2.wav"/>
+          <FILE id="rpMOzH" name="Under_The_Bridge_Clap1.wav" compile="0" resource="1"
+                file="../IRs/Under The Bridge/Under_The_Bridge_Clap1.wav"/>
+        </GROUP>
+        <GROUP id="{11C4CFEE-3B67-3928-ED0D-E157AF33CF2C}" name="Unterf&#252;hrung ARS">
+          <FILE id="NZqVQ6" name="ARS_Long.wav" compile="0" resource="1" file="../IRs/Unterf&#252;hrung ARS/ARS_Long.wav"/>
+        </GROUP>
+      </GROUP>
     </GROUP>
     <GROUP id="{C7AC4E2A-453F-BBC7-A1CA-C43F00A18DC7}" name="Source">
+      <GROUP id="{F0177D25-94B0-FC0D-28EE-F6887CE7F0B2}" name="Data">
+        <FILE id="sZDaM6" name="ReverbIR.cpp" compile="1" resource="0" file="Source/ReverbIR.cpp"/>
+        <FILE id="wJEKLW" name="ReverbIR.h" compile="0" resource="0" file="Source/ReverbIR.h"/>
+        <FILE id="blFRUD" name="ReverbLocation.cpp" compile="1" resource="0"
+              file="Source/ReverbLocation.cpp"/>
+        <FILE id="XoGrwi" name="ReverbLocation.h" compile="0" resource="0"
+              file="Source/ReverbLocation.h"/>
+      </GROUP>
       <FILE id="AXy0L5" name="PluginProcessor.cpp" compile="1" resource="0"
             file="Source/PluginProcessor.cpp"/>
       <FILE id="GsLjYK" name="PluginProcessor.h" compile="0" resource="0"
