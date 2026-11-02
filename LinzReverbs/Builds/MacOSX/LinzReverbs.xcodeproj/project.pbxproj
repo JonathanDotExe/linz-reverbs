@@ -1,0 +1,2503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		AF2F87DBA12E1F60E2F7C7AE /* LinzReverbs - All */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 7CE24ADF0026556F22A57322 /* Build configuration list for PBXAggregateTarget "LinzReverbs - All" */;
+			buildPhases = (
+			);
+			dependencies = (
+				F671E2E4D93247B8CD7FADBD /* PBXTargetDependency */,
+				3335132E47F8C6B1DAE2E5D5 /* PBXTargetDependency */,
+				16F7031E11728279C0B73DDE /* PBXTargetDependency */,
+				3C97A40BE87A3772F8671366 /* PBXTargetDependency */,
+				98BA539B76AC11051C4FB074 /* PBXTargetDependency */,
+			);
+			name = "LinzReverbs - All";
+			productName = LinzReverbs;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		04AB754C25E28632A3396667 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F87D9ECD9196004A72AA508 /* Metal.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		06CF763973ADDF4F2471ABF8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9702A89F4B49211DE35F83C /* Cocoa.framework */; };
+		07FE39574C5B9BD74E283644 /* include_juce_graphics_libwebp_sharpyuv.c in Sources */ = {isa = PBXBuildFile; fileRef = DF28CE2F7A060E7FCAC15A9F /* include_juce_graphics_libwebp_sharpyuv.c */; };
+		08BB8FBF820E9AE58C8E50A4 /* include_juce_core.mm in Sources */ = {isa = PBXBuildFile; fileRef = 34C5E8551EADFEAEB85DFA31 /* include_juce_core.mm */; };
+		092976A461F6746E507B4BE1 /* include_juce_graphics_libjpg_1.c in Sources */ = {isa = PBXBuildFile; fileRef = 1C2F25E2D415FD655459F9A1 /* include_juce_graphics_libjpg_1.c */; };
+		0A3A64202FBF36A1F8E4D908 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C1051DDA382C695C628E6F8 /* AudioToolbox.framework */; };
+		0AF566CCAD7BDC28DCFA4596 /* include_juce_audio_processors_headless_lv2_libs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4FD2163D09F7840D4A3E31F /* include_juce_audio_processors_headless_lv2_libs.cpp */; };
+		0D1E686634889A053C5EC76D /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78CBE69E224D81D1F7B717D7 /* MetalKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		1407814E7DC318F828CE1C57 /* include_juce_audio_utils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 31F23FD58EECCFABFF9FF051 /* include_juce_audio_utils.mm */; };
+		16BB407F3CF31707112CC061 /* include_juce_graphics_Harfbuzz.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7FC6B42C50947E3FA4D551EF /* include_juce_graphics_Harfbuzz.cpp */; };
+		175BC2767CDC26772BAEC41F /* include_juce_graphics_libwebp_dsp_enc_sse41.c in Sources */ = {isa = PBXBuildFile; fileRef = 63A986DC20DBABA004217DE3 /* include_juce_graphics_libwebp_dsp_enc_sse41.c */; };
+		189453B0BEF2CD589FD0F626 /* include_juce_audio_processors.mm in Sources */ = {isa = PBXBuildFile; fileRef = B9C3E5A65759A3F696EC2313 /* include_juce_audio_processors.mm */; };
+		1E6E39D84D48B3D10CF42C74 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A98504D23D8DF067628BC71 /* Security.framework */; };
+		217970F5A73552E7A2E1780F /* include_juce_data_structures.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0FA82A6C7D0BCC902619F286 /* include_juce_data_structures.mm */; };
+		250ED64B7DCAA0F1E574D709 /* DiscRecording.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98F5714D979413E8CA20D91D /* DiscRecording.framework */; };
+		291206E2F95865E64385EDB9 /* include_juce_gui_basics_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 13C3030DEE7402E0C87348E9 /* include_juce_gui_basics_2.cpp */; };
+		295F1C345D9480378BD19359 /* include_juce_audio_formats_ogg.c in Sources */ = {isa = PBXBuildFile; fileRef = 89088C512984583658FDBB2B /* include_juce_audio_formats_ogg.c */; };
+		2B5BA6F171FB6CC5D447C2EF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9702A89F4B49211DE35F83C /* Cocoa.framework */; };
+		2CF7C40BE1D49421EBFA5AF2 /* include_juce_graphics_lunasvg.c in Sources */ = {isa = PBXBuildFile; fileRef = D45FB342905ACA5775367606 /* include_juce_graphics_lunasvg.c */; };
+		33BB6C4ED8CCD2EDAB184D66 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0CC6C1999B1D21081D5402 /* CoreMIDI.framework */; };
+		3890ECE71CC848A97D79CDB8 /* include_juce_gui_extra.mm in Sources */ = {isa = PBXBuildFile; fileRef = 519C7046BCCF445DACC00715 /* include_juce_gui_extra.mm */; };
+		3AD23A0024FCE99267A41D20 /* PluginEditor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B77BFC6CD566183F02493648 /* PluginEditor.cpp */; };
+		3C6468430A0E447623EF130B /* include_juce_graphics_libwebp_dsp_enc.c in Sources */ = {isa = PBXBuildFile; fileRef = E7A23F394E23CF4028F36AC8 /* include_juce_graphics_libwebp_dsp_enc.c */; };
+		3EFAA3843E69007229133B5E /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F87D9ECD9196004A72AA508 /* Metal.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		40D2A519CD1C01E97C439C61 /* include_juce_audio_formats_flac_1.c in Sources */ = {isa = PBXBuildFile; fileRef = 43A5EC3861457F2DFD41AD37 /* include_juce_audio_formats_flac_1.c */; };
+		4123BA9687CDCB45CF42477B /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274E970320FE0029925A0D7E /* CoreAudioKit.framework */; };
+		428245764C62BC0A06DE5E54 /* include_juce_graphics_libwebp_dsp_dec.c in Sources */ = {isa = PBXBuildFile; fileRef = CFA2C33A357AA686DBDC7D88 /* include_juce_graphics_libwebp_dsp_dec.c */; };
+		442D6EE1CDBEAF9EBAAF661F /* include_juce_events.mm in Sources */ = {isa = PBXBuildFile; fileRef = 42E14E75BD4CC3457FC86192 /* include_juce_events.mm */; };
+		45894F36627E6157FB304492 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1919C14FD92D25D83DFB6423 /* IOKit.framework */; };
+		4CF21AA304910F098B3FABAF /* DiscRecording.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98F5714D979413E8CA20D91D /* DiscRecording.framework */; };
+		506CD118965FA753FBC87436 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78CBE69E224D81D1F7B717D7 /* MetalKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		51D289B436759463DB8638F3 /* include_juce_graphics_libwebp_dsp_enc_avx2.c in Sources */ = {isa = PBXBuildFile; fileRef = B4F40A09633DE54F826ABBB6 /* include_juce_graphics_libwebp_dsp_enc_avx2.c */; };
+		520D6DA59D9D4E4B641A1E3B /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20A4FE976A2E129D8E4C25C2 /* CoreAudio.framework */; };
+		5297F8F84FDFD01981C8867A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9702A89F4B49211DE35F83C /* Cocoa.framework */; };
+		52ED9CC561556E1040C4D6AD /* RecentFilesMenuTemplate.nib in Resources */ = {isa = PBXBuildFile; fileRef = 87A0482740628FFC9003C960 /* RecentFilesMenuTemplate.nib */; };
+		535DEE64B782049616F2FB12 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9212EBFE0916B2C38A0D4920 /* QuartzCore.framework */; };
+		5432084695341A55B192396E /* juce_VST3ManifestHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7B93946DB26BC18019C5B75 /* juce_VST3ManifestHelper.cpp */; settings = {COMPILER_FLAGS = "-w -DJUCE_SKIP_PRECOMPILED_HEADER"; }; };
+		5441F01A68A91FDB7FB0362D /* include_juce_graphics_libwebp_enc.c in Sources */ = {isa = PBXBuildFile; fileRef = 24892AB80546AC5BF7AFC3D9 /* include_juce_graphics_libwebp_enc.c */; };
+		582155B79464C63C73ABB33F /* include_juce_graphics.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8BDCCE260567DB6AB59D9C64 /* include_juce_graphics.mm */; };
+		5A42F1CC377D5F71BA9EC6BE /* include_juce_audio_formats_opus.c in Sources */ = {isa = PBXBuildFile; fileRef = 5E1259BC870BBC60106527CC /* include_juce_audio_formats_opus.c */; };
+		5A8EC679D4BC7C515F54A4D3 /* include_juce_graphics_libwebp_utils.c in Sources */ = {isa = PBXBuildFile; fileRef = E57846F96CF7254E76C447E1 /* include_juce_graphics_libwebp_utils.c */; };
+		5E46263F55B0C9D787C34D47 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C1051DDA382C695C628E6F8 /* AudioToolbox.framework */; };
+		5E5AF764309889CA00509829 /* RecentFilesMenuTemplate.nib in Resources */ = {isa = PBXBuildFile; fileRef = 87A0482740628FFC9003C960 /* RecentFilesMenuTemplate.nib */; };
+		5E5AF765309889CA00509829 /* RecentFilesMenuTemplate.nib in Resources */ = {isa = PBXBuildFile; fileRef = 87A0482740628FFC9003C960 /* RecentFilesMenuTemplate.nib */; };
+		5F96485555B801F6CD74ACAB /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274E970320FE0029925A0D7E /* CoreAudioKit.framework */; };
+		6451A61197F1FE4F946A2FB4 /* include_juce_gui_basics_5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66F9E3D250B770374DB8141A /* include_juce_gui_basics_5.cpp */; };
+		647716386E1330A9DE4D0DA2 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1919C14FD92D25D83DFB6423 /* IOKit.framework */; };
+		686B4B9B755AEA737DDA212B /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F87D9ECD9196004A72AA508 /* Metal.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		69BF47CFB6BAD405A528F6E8 /* include_juce_graphics_libjpg_2.c in Sources */ = {isa = PBXBuildFile; fileRef = 93805CC7899E86DB0420E6E1 /* include_juce_graphics_libjpg_2.c */; };
+		6A86DF11A7157C4A15B44340 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B8FCEF11F8D837B7ED20E2A /* AudioUnit.framework */; };
+		6B915741FA5237B07C8DD5F9 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55A3503F3B426D10DFCF3046 /* Accelerate.framework */; };
+		6E73FC23B424B0B2A4EC7FEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA9337D43855CB0829E2B922 /* Foundation.framework */; };
+		70A1D7C568348AB2A16C6468 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A98504D23D8DF067628BC71 /* Security.framework */; };
+		72BE45BF44B57DEA6F7B8C7F /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274E970320FE0029925A0D7E /* CoreAudioKit.framework */; };
+		75B0696701015B56978862FB /* include_juce_audio_plugin_client_AU_2.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4B3C5EDEF71E63122BCF9F3D /* include_juce_audio_plugin_client_AU_2.mm */; };
+		7B02F5B65128C3D14CBF658C /* DiscRecording.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98F5714D979413E8CA20D91D /* DiscRecording.framework */; };
+		7B29AD2B474F3E05A3C5FB16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA9337D43855CB0829E2B922 /* Foundation.framework */; };
+		7F89A1F4326D73C574B0E3E6 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F87D9ECD9196004A72AA508 /* Metal.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		80EFC077FAB3220909D55380 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20A4FE976A2E129D8E4C25C2 /* CoreAudio.framework */; };
+		820E769BA639D24226F55FD2 /* include_juce_osc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBF6D415A5DF291BA340CD69 /* include_juce_osc.cpp */; };
+		823442C6281CD6B15D1C0790 /* include_juce_audio_plugin_client_AU_1.mm in Sources */ = {isa = PBXBuildFile; fileRef = 162C38D5B156DE0A69731CFF /* include_juce_audio_plugin_client_AU_1.mm */; };
+		837FF682A995E127DB30AF85 /* include_juce_graphics_Sheenbidi.c in Sources */ = {isa = PBXBuildFile; fileRef = D9EB44AF80CD80F3D6CA9FB2 /* include_juce_graphics_Sheenbidi.c */; };
+		85F8B3E9BBCB2D3472449CD7 /* include_juce_audio_formats.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0CDB16A2C2CA97086D7BEAB0 /* include_juce_audio_formats.mm */; };
+		88C6794B953B5F5B7C6484FD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9702A89F4B49211DE35F83C /* Cocoa.framework */; };
+		8C95EA440AF0281EB9579A4C /* PluginProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F837DDEF2DF2EBCA222AFD19 /* PluginProcessor.cpp */; };
+		961BFA4BF57C0CD5A41305F5 /* include_juce_audio_processors_headless_ara.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC6516D9A96B9C6B0BCBE2AC /* include_juce_audio_processors_headless_ara.cpp */; };
+		972A3DB3993053845F087981 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1919C14FD92D25D83DFB6423 /* IOKit.framework */; };
+		9A98A3E827F2ECB215E600E2 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0CC6C1999B1D21081D5402 /* CoreMIDI.framework */; };
+		9AB4B39B9452D62C83E7D36D /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E481DFED2610459283231790 /* WebKit.framework */; };
+		9E08EEADFD2F526ECCBC68AB /* include_juce_audio_plugin_client_Standalone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 85CBA44A047846CEB4A574B6 /* include_juce_audio_plugin_client_Standalone.cpp */; };
+		A03D52FCBC0AA1F57CAF2781 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1919C14FD92D25D83DFB6423 /* IOKit.framework */; };
+		A7030FFF17294DE671C26B1A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E481DFED2610459283231790 /* WebKit.framework */; };
+		AACCB108DD268F8912A7DB18 /* include_juce_core_CompilationTime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30F45B5EF0099BBC05430FDC /* include_juce_core_CompilationTime.cpp */; };
+		ADF9C387499FF73F0D6B956B /* include_juce_gui_basics_3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 725ACD0EB7CCE8B9447928E7 /* include_juce_gui_basics_3.cpp */; };
+		AED2A6DF977DCECBA27D6BDE /* include_juce_audio_basics.mm in Sources */ = {isa = PBXBuildFile; fileRef = E1256A6B8E89F9383F577B4B /* include_juce_audio_basics.mm */; };
+		AFE43D28BDF9ED7FBBB523B3 /* include_juce_audio_plugin_client_ARA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6B650456EA6A68B5679C22D /* include_juce_audio_plugin_client_ARA.cpp */; };
+		AFEE058E4AB7E78916F72099 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E481DFED2610459283231790 /* WebKit.framework */; };
+		B1DFC3DA95E37BA1CEA369DF /* include_juce_graphics_libjpg_3.c in Sources */ = {isa = PBXBuildFile; fileRef = 148D5197577B525DA4CAF3FB /* include_juce_graphics_libjpg_3.c */; };
+		B4192AECD0A0FEC16841BFE4 /* DiscRecording.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98F5714D979413E8CA20D91D /* DiscRecording.framework */; };
+		B4A4864586171DF91CC5E90E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A98504D23D8DF067628BC71 /* Security.framework */; };
+		B686E1547E7CAA3046AF1D89 /* include_juce_dsp.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1532FC60E766DD72F605675B /* include_juce_dsp.mm */; };
+		BAE64E525E348B508D8A9989 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20A4FE976A2E129D8E4C25C2 /* CoreAudio.framework */; };
+		BB761A7A903C2D1E02F2A799 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55A3503F3B426D10DFCF3046 /* Accelerate.framework */; };
+		BD4FFDAADD5CB12B5CB68260 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E481DFED2610459283231790 /* WebKit.framework */; };
+		BE7057082F54AB231F5ADE6F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA9337D43855CB0829E2B922 /* Foundation.framework */; };
+		C2A2849D2BCB5F799DA2B65C /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55A3503F3B426D10DFCF3046 /* Accelerate.framework */; };
+		C320159772755D7D3CEA3F78 /* include_juce_audio_formats_flac_2.c in Sources */ = {isa = PBXBuildFile; fileRef = EA78D129FA9B31F92A8F078B /* include_juce_audio_formats_flac_2.c */; };
+		C45C8CBBE9E05EF8D067CDCA /* include_juce_audio_devices.mm in Sources */ = {isa = PBXBuildFile; fileRef = 01CEE6EA5DB21F04B4C0FEFC /* include_juce_audio_devices.mm */; };
+		C8F9ABBD651BD1D6D3EF49FF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C1051DDA382C695C628E6F8 /* AudioToolbox.framework */; };
+		CD105C13C0629A855930A3F8 /* include_juce_audio_plugin_client_VST3.mm in Sources */ = {isa = PBXBuildFile; fileRef = 32DE5D34195665F30D9C49FF /* include_juce_audio_plugin_client_VST3.mm */; };
+		CF390018896DA53A967B2F9F /* include_juce_gui_basics.mm in Sources */ = {isa = PBXBuildFile; fileRef = 25FFF80258EE91511A7A4532 /* include_juce_gui_basics.mm */; };
+		CFC578AE4C90A163532A8169 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA9337D43855CB0829E2B922 /* Foundation.framework */; };
+		D03E0E628725873EF8FF3CF9 /* include_juce_audio_processors_headless.mm in Sources */ = {isa = PBXBuildFile; fileRef = 946D186AD9EC7B6F484726B7 /* include_juce_audio_processors_headless.mm */; };
+		D04242096B53E399DFC2CFE7 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0CC6C1999B1D21081D5402 /* CoreMIDI.framework */; };
+		D04F023E515E9F8CBCDEEC19 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78CBE69E224D81D1F7B717D7 /* MetalKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		D299DBD11E034B41DA5C90C5 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0CC6C1999B1D21081D5402 /* CoreMIDI.framework */; };
+		D3F30F5CA37B2814E196CD65 /* include_juce_gui_basics_4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0040B95A176B0C902AC57AFB /* include_juce_gui_basics_4.cpp */; };
+		D5411173320C77B61B738130 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9212EBFE0916B2C38A0D4920 /* QuartzCore.framework */; };
+		D67156EEF9E5E4DF080C9365 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20A4FE976A2E129D8E4C25C2 /* CoreAudio.framework */; };
+		D6EFA96BA11F21ED49F8E21B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A98504D23D8DF067628BC71 /* Security.framework */; };
+		D9102963947C4A51D2D8E45F /* include_juce_graphics_libwebp_dsp_dec_avx2.c in Sources */ = {isa = PBXBuildFile; fileRef = 7497768BDF21D914D8973C71 /* include_juce_graphics_libwebp_dsp_dec_avx2.c */; };
+		D95C18B40F03D58196F00139 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55A3503F3B426D10DFCF3046 /* Accelerate.framework */; };
+		E30505AC35949AF77961CEC9 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78CBE69E224D81D1F7B717D7 /* MetalKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		E541A3A734925001997E1250 /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274E970320FE0029925A0D7E /* CoreAudioKit.framework */; };
+		E7301007A7305834A2EFFCF4 /* include_juce_graphics_libwebp_dec.c in Sources */ = {isa = PBXBuildFile; fileRef = 2A4CF51B14A2F589A09171FC /* include_juce_graphics_libwebp_dec.c */; };
+		E8C882BB8718E41F9CEBEADE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9212EBFE0916B2C38A0D4920 /* QuartzCore.framework */; };
+		E976AD793D4524C89218E12F /* include_juce_graphics_libwebp_dsp_dec_sse41.c in Sources */ = {isa = PBXBuildFile; fileRef = E0D40FF859670FABA2C57235 /* include_juce_graphics_libwebp_dsp_dec_sse41.c */; };
+		E97C3C0579E858BA94AB8DC6 /* include_juce_core_zlib.c in Sources */ = {isa = PBXBuildFile; fileRef = 693FD70824A4538DD4424EDC /* include_juce_core_zlib.c */; };
+		EE990276824BFC9E8021FD46 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9212EBFE0916B2C38A0D4920 /* QuartzCore.framework */; };
+		F1B0EC9386CB480183E52BC2 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C1051DDA382C695C628E6F8 /* AudioToolbox.framework */; };
+		F4E95CEE5B0B42016F569BEA /* include_juce_graphics_libpng.c in Sources */ = {isa = PBXBuildFile; fileRef = 536968CD9E0972D569CC214A /* include_juce_graphics_libpng.c */; };
+		FB23C7627D5EBDFF2882EE63 /* include_juce_audio_formats_opusfile.c in Sources */ = {isa = PBXBuildFile; fileRef = FE6F5B16BAF1114E32FEA9A7 /* include_juce_audio_formats_opusfile.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5E5AF767309889CC00509829 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A917BB820936DDC38CA236FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 180F73F2F6BBD80169B3DB78;
+			remoteInfo = "LinzReverbs - Shared Code";
+		};
+		5E5AF768309889CC00509829 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A917BB820936DDC38CA236FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00607DC12BCD37A86816394E;
+			remoteInfo = "LinzReverbs - VST3 Manifest Helper";
+		};
+		5E5AF769309889CC00509829 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A917BB820936DDC38CA236FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 180F73F2F6BBD80169B3DB78;
+			remoteInfo = "LinzReverbs - Shared Code";
+		};
+		5E5AF76A309889CC00509829 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A917BB820936DDC38CA236FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 180F73F2F6BBD80169B3DB78;
+			remoteInfo = "LinzReverbs - Shared Code";
+		};
+		5E5AF76B309889CC00509829 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A917BB820936DDC38CA236FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F72CFF95CBA98D0AF2B72D78;
+			remoteInfo = "LinzReverbs - VST3";
+		};
+		5E5AF76C309889CC00509829 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A917BB820936DDC38CA236FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B9663F8DF28C6D5CEADDEE8;
+			remoteInfo = "LinzReverbs - AU";
+		};
+		5E5AF76D309889CC00509829 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A917BB820936DDC38CA236FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7DD12FE83FED42907BF6D15E;
+			remoteInfo = "LinzReverbs - Standalone Plugin";
+		};
+		5E5AF76E309889CC00509829 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A917BB820936DDC38CA236FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 180F73F2F6BBD80169B3DB78;
+			remoteInfo = "LinzReverbs - Shared Code";
+		};
+		5E5AF76F309889CC00509829 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A917BB820936DDC38CA236FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00607DC12BCD37A86816394E;
+			remoteInfo = "LinzReverbs - VST3 Manifest Helper";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0040B95A176B0C902AC57AFB /* include_juce_gui_basics_4.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = include_juce_gui_basics_4.cpp; path = ../../JuceLibraryCode/include_juce_gui_basics_4.cpp; sourceTree = SOURCE_ROOT; };
+		01CEE6EA5DB21F04B4C0FEFC /* include_juce_audio_devices.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_devices.mm; path = ../../JuceLibraryCode/include_juce_audio_devices.mm; sourceTree = SOURCE_ROOT; };
+		0B9FE6224BC5D422FECF3789 /* juce_gui_basics */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_gui_basics; path = "~/JUCE/modules/juce_gui_basics"; sourceTree = "<absolute>"; };
+		0CDB16A2C2CA97086D7BEAB0 /* include_juce_audio_formats.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_formats.mm; path = ../../JuceLibraryCode/include_juce_audio_formats.mm; sourceTree = SOURCE_ROOT; };
+		0FA82A6C7D0BCC902619F286 /* include_juce_data_structures.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_data_structures.mm; path = ../../JuceLibraryCode/include_juce_data_structures.mm; sourceTree = SOURCE_ROOT; };
+		13C3030DEE7402E0C87348E9 /* include_juce_gui_basics_2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = include_juce_gui_basics_2.cpp; path = ../../JuceLibraryCode/include_juce_gui_basics_2.cpp; sourceTree = SOURCE_ROOT; };
+		148D5197577B525DA4CAF3FB /* include_juce_graphics_libjpg_3.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = include_juce_graphics_libjpg_3.c; path = ../../JuceLibraryCode/include_juce_graphics_libjpg_3.c; sourceTree = SOURCE_ROOT; };
+		1532FC60E766DD72F605675B /* include_juce_dsp.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_dsp.mm; path = ../../JuceLibraryCode/include_juce_dsp.mm; sourceTree = SOURCE_ROOT; };
+		1548DD29A4B97116E713D146 /* JucePluginDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JucePluginDefines.h; path = ../../JuceLibraryCode/JucePluginDefines.h; sourceTree = SOURCE_ROOT; };
+		162C38D5B156DE0A69731CFF /* include_juce_audio_plugin_client_AU_1.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_plugin_client_AU_1.mm; path = ../../JuceLibraryCode/include_juce_audio_plugin_client_AU_1.mm; sourceTree = SOURCE_ROOT; };
+		1919C14FD92D25D83DFB6423 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		1A98504D23D8DF067628BC71 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		1B8FCEF11F8D837B7ED20E2A /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		1C2F25E2D415FD655459F9A1 /* include_juce_graphics_libjpg_1.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = include_juce_graphics_libjpg_1.c; path = ../../JuceLibraryCode/include_juce_graphics_libjpg_1.c; sourceTree = SOURCE_ROOT; };
+		20A4FE976A2E129D8E4C25C2 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		2464D0E2A206E6597ABA660D /* PluginEditor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PluginEditor.h; path = ../../Source/PluginEditor.h; sourceTree = SOURCE_ROOT; };
+		24892AB80546AC5BF7AFC3D9 /* include_juce_graphics_libwebp_enc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = include_juce_graphics_libwebp_enc.c; path = ../../JuceLibraryCode/include_juce_graphics_libwebp_enc.c; sourceTree = SOURCE_ROOT; };
+		25FFF80258EE91511A7A4532 /* include_juce_gui_basics.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_gui_basics.mm; path = ../../JuceLibraryCode/include_juce_gui_basics.mm; sourceTree = SOURCE_ROOT; };
+		274E970320FE0029925A0D7E /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
+		2A4CF51B14A2F589A09171FC /* include_juce_graphics_libwebp_dec.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = include_juce_graphics_libwebp_dec.c; path = ../../JuceLibraryCode/include_juce_graphics_libwebp_dec.c; sourceTree = SOURCE_ROOT; };
+		2F87D9ECD9196004A72AA508 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		30F45B5EF0099BBC05430FDC /* include_juce_core_CompilationTime.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = include_juce_core_CompilationTime.cpp; path = ../../JuceLibraryCode/include_juce_core_CompilationTime.cpp; sourceTree = SOURCE_ROOT; };
+		31F23FD58EECCFABFF9FF051 /* include_juce_audio_utils.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_utils.mm; path = ../../JuceLibraryCode/include_juce_audio_utils.mm; sourceTree = SOURCE_ROOT; };
+		32DE5D34195665F30D9C49FF /* include_juce_audio_plugin_client_VST3.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_plugin_client_VST3.mm; path = ../../JuceLibraryCode/include_juce_audio_plugin_client_VST3.mm; sourceTree = SOURCE_ROOT; };
+		34C5E8551EADFEAEB85DFA31 /* include_juce_core.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_core.mm; path = ../../JuceLibraryCode/include_juce_core.mm; sourceTree = SOURCE_ROOT; };
+		3CE19578F73B485760FF3825 /* juce_audio_plugin_client */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_audio_plugin_client; path = "~/JUCE/modules/juce_audio_plugin_client"; sourceTree = "<absolute>"; };
+		3F52A48783860D35DD9324A0 /* juce_events */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_events; path = "~/JUCE/modules/juce_events"; sourceTree = "<absolute>"; };
+		40D699E7F3882FB67B06C1B6 /* juce_dsp */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_dsp; path = "~/JUCE/modules/juce_dsp"; sourceTree = "<absolute>"; };
+		422147ABE768CE944FB33284 /* Info-Standalone_Plugin.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-Standalone_Plugin.plist"; sourceTree = SOURCE_ROOT; };
+		42E14E75BD4CC3457FC86192 /* include_juce_events.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_events.mm; path = ../../JuceLibraryCode/include_juce_events.mm; sourceTree = SOURCE_ROOT; };
+		43A5EC3861457F2DFD41AD37 /* include_juce_audio_formats_flac_1.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = include_juce_audio_formats_flac_1.c; path = ../../JuceLibraryCode/include_juce_audio_formats_flac_1.c; sourceTree = SOURCE_ROOT; };
+		45407F4D68D7F77CD848AC24 /* juce_audio_basics */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_audio_basics; path = "~/JUCE/modules/juce_audio_basics"; sourceTree = "<absolute>"; };
+		4B3C5EDEF71E63122BCF9F3D /* include_juce_audio_plugin_client_AU_2.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_plugin_client_AU_2.mm; path = ../../JuceLibraryCode/include_juce_audio_plugin_client_AU_2.mm; sourceTree = SOURCE_ROOT; };
+		50655E1F88E7B0F2A40DEB4B /* PluginProcessor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PluginProcessor.h; path = ../../Source/PluginProcessor.h; sourceTree = SOURCE_ROOT; };
+		519C7046BCCF445DACC00715 /* include_juce_gui_extra.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_gui_extra.mm; path = ../../JuceLibraryCode/include_juce_gui_extra.mm; sourceTree = SOURCE_ROOT; };
+		536968CD9E0972D569CC214A /* include_juce_graphics_libpng.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = include_juce_graphics_libpng.c; path = ../../JuceLibraryCode/include_juce_graphics_libpng.c; sourceTree = SOURCE_ROOT; };
+		55A3503F3B426D10DFCF3046 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		5C5487FC31266F47D737698B /* juce_data_structures */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_data_structures; path = "~/JUCE/modules/juce_data_structures"; sourceTree = "<absolute>"; };
+		5E1259BC870BBC60106527CC /* include_juce_audio_formats_opus.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = include_juce_audio_formats_opus.c; path = ../../JuceLibraryCode/include_juce_audio_formats_opus.c; sourceTree = SOURCE_ROOT; };
+		63A986DC20DBABA004217DE3 /* include_juce_graphics_libwebp_dsp_enc_sse41.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = include_juce_graphics_libwebp_dsp_enc_sse41.c; path = ../../JuceLibraryCode/include_juce_graphics_libwebp_dsp_enc_sse41.c; sourceTree = SOURCE_ROOT; };
+		66F9E3D250B770374DB8141A /* include_juce_gui_basics_5.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = include_juce_gui_basics_5.cpp; path = ../../JuceLibraryCode/include_juce_gui_basics_5.cpp; sourceTree = SOURCE_ROOT; };
+		693FD70824A4538DD4424EDC /* include_juce_core_zlib.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = include_juce_core_zlib.c; path = ../../JuceLibraryCode/include_juce_core_zlib.c; sourceTree = SOURCE_ROOT; };
+		6C1051DDA382C695C628E6F8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		6DD55A9E6CB941203C27874A /* LinzReverbs.component */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinzReverbs.component; sourceTree = BUILT_PRODUCTS_DIR; };
+		7189610CF0A8F6FF118899C4 /* juce_audio_formats */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_audio_formats; path = "~/JUCE/modules/juce_audio_formats"; sourceTree = "<absolute>"; };
+		725ACD0EB7CCE8B9447928E7 /* include_juce_gui_basics_3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = include_juce_gui_basics_3.cpp; path = ../../JuceLibraryCode/include_juce_gui_basics_3.cpp; sourceTree = SOURCE_ROOT; };
+		7497768BDF21D914D8973C71 /* include_juce_graphics_libwebp_dsp_dec_avx2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = include_juce_graphics_libwebp_dsp_dec_avx2.c; path = ../../JuceLibraryCode/include_juce_graphics_libwebp_dsp_dec_avx2.c; sourceTree = SOURCE_ROOT; };
+		78CBE69E224D81D1F7B717D7 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		7FC6B42C50947E3FA4D551EF /* include_juce_graphics_Harfbuzz.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = include_juce_graphics_Harfbuzz.cpp; path = ../../JuceLibraryCode/include_juce_graphics_Harfbuzz.cpp; sourceTree = SOURCE_ROOT; };
+		80699F8B8DBBAAE6CBFDE442 /* Info-VST3_Manifest_Helper.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-VST3_Manifest_Helper.plist"; sourceTree = SOURCE_ROOT; };
+		85CBA44A047846CEB4A574B6 /* include_juce_audio_plugin_client_Standalone.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = include_juce_audio_plugin_client_Standalone.cpp; path = ../../JuceLibraryCode/include_juce_audio_plugin_client_Standalone.cpp; sourceTree = SOURCE_ROOT; };
+		87A0482740628FFC9003C960 /* RecentFilesMenuTemplate.nib */ = {isa = PBXFileReference; lastKnownFileType = file.nib; path = RecentFilesMenuTemplate.nib; sourceTree = SOURCE_ROOT; };
+		89088C512984583658FDBB2B /* include_juce_audio_formats_ogg.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = include_juce_audio_formats_ogg.c; path = ../../JuceLibraryCode/include_juce_audio_formats_ogg.c; sourceTree = SOURCE_ROOT; };
+		8AE72E1657CE8B1964FEEE84 /* libLinzReverbs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLinzReverbs.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BDCCE260567DB6AB59D9C64 /* include_juce_graphics.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_graphics.mm; path = ../../JuceLibraryCode/include_juce_graphics.mm; sourceTree = SOURCE_ROOT; };
+		8F5ED45B1C846A1746F8D016 /* juce_core */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_core; path = "~/JUCE/modules/juce_core"; sourceTree = "<absolute>"; };
+		9212EBFE0916B2C38A0D4920 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9303F94411CCCC68A2CF37E5 /* juce_audio_utils */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_audio_utils; path = "~/JUCE/modules/juce_audio_utils"; sourceTree = "<absolute>"; };
+		93805CC7899E86DB0420E6E1 /* include_juce_graphics_libjpg_2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = include_juce_graphics_libjpg_2.c; path = ../../JuceLibraryCode/include_juce_graphics_libjpg_2.c; sourceTree = SOURCE_ROOT; };
+		941977B4CB0057FCD64D3EBB /* LinzReverbs.vst3 */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinzReverbs.vst3; sourceTree = BUILT_PRODUCTS_DIR; };
+		946D186AD9EC7B6F484726B7 /* include_juce_audio_processors_headless.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_processors_headless.mm; path = ../../JuceLibraryCode/include_juce_audio_processors_headless.mm; sourceTree = SOURCE_ROOT; };
+		95009815220BD776B8646FB9 /* Info-AU.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-AU.plist"; sourceTree = SOURCE_ROOT; };
+		98F5714D979413E8CA20D91D /* DiscRecording.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DiscRecording.framework; path = System/Library/Frameworks/DiscRecording.framework; sourceTree = SDKROOT; };
+		A0568F50CC5423D53766ADF1 /* JuceHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JuceHeader.h; path = ../../JuceLibraryCode/JuceHeader.h; sourceTree = SOURCE_ROOT; };
+		A45D876EEE1083D430EAA709 /* juce_audio_processors */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_audio_processors; path = "~/JUCE/modules/juce_audio_processors"; sourceTree = "<absolute>"; };
+		A6FAB2E0772ECBA3F0340F44 /* juce_audio_processors_headless */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_audio_processors_headless; path = "~/JUCE/modules/juce_audio_processors_headless"; sourceTree = "<absolute>"; };
+		AC6516D9A96B9C6B0BCBE2AC /* include_juce_audio_processors_headless_ara.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = include_juce_audio_processors_headless_ara.cpp; path = ../../JuceLibraryCode/include_juce_audio_processors_headless_ara.cpp; sourceTree = SOURCE_ROOT; };
+		ACD29D1254CFE70325835F67 /* LinzReverbs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinzReverbs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4F40A09633DE54F826ABBB6 /* include_juce_graphics_libwebp_dsp_enc_avx2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = include_juce_graphics_libwebp_dsp_enc_avx2.c; path = ../../JuceLibraryCode/include_juce_graphics_libwebp_dsp_enc_avx2.c; sourceTree = SOURCE_ROOT; };
+		B6B650456EA6A68B5679C22D /* include_juce_audio_plugin_client_ARA.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = include_juce_audio_plugin_client_ARA.cpp; path = ../../JuceLibraryCode/include_juce_audio_plugin_client_ARA.cpp; sourceTree = SOURCE_ROOT; };
+		B77BFC6CD566183F02493648 /* PluginEditor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = PluginEditor.cpp; path = ../../Source/PluginEditor.cpp; sourceTree = SOURCE_ROOT; };
+		B7B93946DB26BC18019C5B75 /* juce_VST3ManifestHelper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = juce_VST3ManifestHelper.cpp; path = "$(HOME)/JUCE/modules/juce_audio_plugin_client/VST3/juce_VST3ManifestHelper.cpp"; sourceTree = "<absolute>"; };
+		B9702A89F4B49211DE35F83C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		B9C3E5A65759A3F696EC2313 /* include_juce_audio_processors.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_processors.mm; path = ../../JuceLibraryCode/include_juce_audio_processors.mm; sourceTree = SOURCE_ROOT; };
+		CA9337D43855CB0829E2B922 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CFA2C33A357AA686DBDC7D88 /* include_juce_graphics_libwebp_dsp_dec.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = include_juce_graphics_libwebp_dsp_dec.c; path = ../../JuceLibraryCode/include_juce_graphics_libwebp_dsp_dec.c; sourceTree = SOURCE_ROOT; };
+		D44217DE2D6D4BD98D5AF0EE /* Info-VST3.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-VST3.plist"; sourceTree = SOURCE_ROOT; };
+		D45FB342905ACA5775367606 /* include_juce_graphics_lunasvg.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = include_juce_graphics_lunasvg.c; path = ../../JuceLibraryCode/include_juce_graphics_lunasvg.c; sourceTree = SOURCE_ROOT; };
+		D4FD2163D09F7840D4A3E31F /* include_juce_audio_processors_headless_lv2_libs.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = include_juce_audio_processors_headless_lv2_libs.cpp; path = ../../JuceLibraryCode/include_juce_audio_processors_headless_lv2_libs.cpp; sourceTree = SOURCE_ROOT; };
+		D73511A1D6AC54053FE45B05 /* juce_osc */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_osc; path = "~/JUCE/modules/juce_osc"; sourceTree = "<absolute>"; };
+		D9EB44AF80CD80F3D6CA9FB2 /* include_juce_graphics_Sheenbidi.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = include_juce_graphics_Sheenbidi.c; path = ../../JuceLibraryCode/include_juce_graphics_Sheenbidi.c; sourceTree = SOURCE_ROOT; };
+		DF28CE2F7A060E7FCAC15A9F /* include_juce_graphics_libwebp_sharpyuv.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = include_juce_graphics_libwebp_sharpyuv.c; path = ../../JuceLibraryCode/include_juce_graphics_libwebp_sharpyuv.c; sourceTree = SOURCE_ROOT; };
+		E0D40FF859670FABA2C57235 /* include_juce_graphics_libwebp_dsp_dec_sse41.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = include_juce_graphics_libwebp_dsp_dec_sse41.c; path = ../../JuceLibraryCode/include_juce_graphics_libwebp_dsp_dec_sse41.c; sourceTree = SOURCE_ROOT; };
+		E1256A6B8E89F9383F577B4B /* include_juce_audio_basics.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_basics.mm; path = ../../JuceLibraryCode/include_juce_audio_basics.mm; sourceTree = SOURCE_ROOT; };
+		E35F6A2696C33755FEBA62A8 /* juce_audio_devices */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_audio_devices; path = "~/JUCE/modules/juce_audio_devices"; sourceTree = "<absolute>"; };
+		E481DFED2610459283231790 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		E57846F96CF7254E76C447E1 /* include_juce_graphics_libwebp_utils.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = include_juce_graphics_libwebp_utils.c; path = ../../JuceLibraryCode/include_juce_graphics_libwebp_utils.c; sourceTree = SOURCE_ROOT; };
+		E76287CEC00FA1583BA9E2E0 /* juce_vst3_helper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = juce_vst3_helper; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7A23F394E23CF4028F36AC8 /* include_juce_graphics_libwebp_dsp_enc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = include_juce_graphics_libwebp_dsp_enc.c; path = ../../JuceLibraryCode/include_juce_graphics_libwebp_dsp_enc.c; sourceTree = SOURCE_ROOT; };
+		EA78D129FA9B31F92A8F078B /* include_juce_audio_formats_flac_2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = include_juce_audio_formats_flac_2.c; path = ../../JuceLibraryCode/include_juce_audio_formats_flac_2.c; sourceTree = SOURCE_ROOT; };
+		EAE100380794F1CAB785E8B0 /* juce_graphics */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_graphics; path = "~/JUCE/modules/juce_graphics"; sourceTree = "<absolute>"; };
+		EFF3E20DD64FAA07D084A7FF /* juce_gui_extra */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_gui_extra; path = "~/JUCE/modules/juce_gui_extra"; sourceTree = "<absolute>"; };
+		F837DDEF2DF2EBCA222AFD19 /* PluginProcessor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = PluginProcessor.cpp; path = ../../Source/PluginProcessor.cpp; sourceTree = SOURCE_ROOT; };
+		FA0CC6C1999B1D21081D5402 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
+		FBF6D415A5DF291BA340CD69 /* include_juce_osc.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = include_juce_osc.cpp; path = ../../JuceLibraryCode/include_juce_osc.cpp; sourceTree = SOURCE_ROOT; };
+		FE6F5B16BAF1114E32FEA9A7 /* include_juce_audio_formats_opusfile.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = include_juce_audio_formats_opusfile.c; path = ../../JuceLibraryCode/include_juce_audio_formats_opusfile.c; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C07B86507A03C0B9E7C9E65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A86DF11A7157C4A15B44340 /* AudioUnit.framework in Frameworks */,
+				6B915741FA5237B07C8DD5F9 /* Accelerate.framework in Frameworks */,
+				5E46263F55B0C9D787C34D47 /* AudioToolbox.framework in Frameworks */,
+				2B5BA6F171FB6CC5D447C2EF /* Cocoa.framework in Frameworks */,
+				BAE64E525E348B508D8A9989 /* CoreAudio.framework in Frameworks */,
+				72BE45BF44B57DEA6F7B8C7F /* CoreAudioKit.framework in Frameworks */,
+				9A98A3E827F2ECB215E600E2 /* CoreMIDI.framework in Frameworks */,
+				250ED64B7DCAA0F1E574D709 /* DiscRecording.framework in Frameworks */,
+				6E73FC23B424B0B2A4EC7FEF /* Foundation.framework in Frameworks */,
+				A03D52FCBC0AA1F57CAF2781 /* IOKit.framework in Frameworks */,
+				EE990276824BFC9E8021FD46 /* QuartzCore.framework in Frameworks */,
+				D6EFA96BA11F21ED49F8E21B /* Security.framework in Frameworks */,
+				9AB4B39B9452D62C83E7D36D /* WebKit.framework in Frameworks */,
+				3EFAA3843E69007229133B5E /* Metal.framework in Frameworks */,
+				506CD118965FA753FBC87436 /* MetalKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC5A72A4DA0D1B87ED27EC3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB761A7A903C2D1E02F2A799 /* Accelerate.framework in Frameworks */,
+				0A3A64202FBF36A1F8E4D908 /* AudioToolbox.framework in Frameworks */,
+				5297F8F84FDFD01981C8867A /* Cocoa.framework in Frameworks */,
+				80EFC077FAB3220909D55380 /* CoreAudio.framework in Frameworks */,
+				E541A3A734925001997E1250 /* CoreAudioKit.framework in Frameworks */,
+				33BB6C4ED8CCD2EDAB184D66 /* CoreMIDI.framework in Frameworks */,
+				B4192AECD0A0FEC16841BFE4 /* DiscRecording.framework in Frameworks */,
+				CFC578AE4C90A163532A8169 /* Foundation.framework in Frameworks */,
+				45894F36627E6157FB304492 /* IOKit.framework in Frameworks */,
+				D5411173320C77B61B738130 /* QuartzCore.framework in Frameworks */,
+				B4A4864586171DF91CC5E90E /* Security.framework in Frameworks */,
+				A7030FFF17294DE671C26B1A /* WebKit.framework in Frameworks */,
+				04AB754C25E28632A3396667 /* Metal.framework in Frameworks */,
+				0D1E686634889A053C5EC76D /* MetalKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC394E046844EE123092BCBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D95C18B40F03D58196F00139 /* Accelerate.framework in Frameworks */,
+				C8F9ABBD651BD1D6D3EF49FF /* AudioToolbox.framework in Frameworks */,
+				06CF763973ADDF4F2471ABF8 /* Cocoa.framework in Frameworks */,
+				D67156EEF9E5E4DF080C9365 /* CoreAudio.framework in Frameworks */,
+				5F96485555B801F6CD74ACAB /* CoreAudioKit.framework in Frameworks */,
+				D299DBD11E034B41DA5C90C5 /* CoreMIDI.framework in Frameworks */,
+				7B02F5B65128C3D14CBF658C /* DiscRecording.framework in Frameworks */,
+				7B29AD2B474F3E05A3C5FB16 /* Foundation.framework in Frameworks */,
+				647716386E1330A9DE4D0DA2 /* IOKit.framework in Frameworks */,
+				535DEE64B782049616F2FB12 /* QuartzCore.framework in Frameworks */,
+				70A1D7C568348AB2A16C6468 /* Security.framework in Frameworks */,
+				AFEE058E4AB7E78916F72099 /* WebKit.framework in Frameworks */,
+				686B4B9B755AEA737DDA212B /* Metal.framework in Frameworks */,
+				E30505AC35949AF77961CEC9 /* MetalKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC4794D88D5F6A65D33A175A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2A2849D2BCB5F799DA2B65C /* Accelerate.framework in Frameworks */,
+				F1B0EC9386CB480183E52BC2 /* AudioToolbox.framework in Frameworks */,
+				88C6794B953B5F5B7C6484FD /* Cocoa.framework in Frameworks */,
+				520D6DA59D9D4E4B641A1E3B /* CoreAudio.framework in Frameworks */,
+				4123BA9687CDCB45CF42477B /* CoreAudioKit.framework in Frameworks */,
+				D04242096B53E399DFC2CFE7 /* CoreMIDI.framework in Frameworks */,
+				4CF21AA304910F098B3FABAF /* DiscRecording.framework in Frameworks */,
+				BE7057082F54AB231F5ADE6F /* Foundation.framework in Frameworks */,
+				972A3DB3993053845F087981 /* IOKit.framework in Frameworks */,
+				E8C882BB8718E41F9CEBEADE /* QuartzCore.framework in Frameworks */,
+				1E6E39D84D48B3D10CF42C74 /* Security.framework in Frameworks */,
+				BD4FFDAADD5CB12B5CB68260 /* WebKit.framework in Frameworks */,
+				7F89A1F4326D73C574B0E3E6 /* Metal.framework in Frameworks */,
+				D04F023E515E9F8CBCDEEC19 /* MetalKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01E38EA5D91C83A097CEE98C /* JUCE Modules */ = {
+			isa = PBXGroup;
+			children = (
+				45407F4D68D7F77CD848AC24 /* juce_audio_basics */,
+				E35F6A2696C33755FEBA62A8 /* juce_audio_devices */,
+				7189610CF0A8F6FF118899C4 /* juce_audio_formats */,
+				3CE19578F73B485760FF3825 /* juce_audio_plugin_client */,
+				A45D876EEE1083D430EAA709 /* juce_audio_processors */,
+				A6FAB2E0772ECBA3F0340F44 /* juce_audio_processors_headless */,
+				9303F94411CCCC68A2CF37E5 /* juce_audio_utils */,
+				8F5ED45B1C846A1746F8D016 /* juce_core */,
+				5C5487FC31266F47D737698B /* juce_data_structures */,
+				40D699E7F3882FB67B06C1B6 /* juce_dsp */,
+				3F52A48783860D35DD9324A0 /* juce_events */,
+				EAE100380794F1CAB785E8B0 /* juce_graphics */,
+				0B9FE6224BC5D422FECF3789 /* juce_gui_basics */,
+				EFF3E20DD64FAA07D084A7FF /* juce_gui_extra */,
+				D73511A1D6AC54053FE45B05 /* juce_osc */,
+			);
+			name = "JUCE Modules";
+			sourceTree = "<group>";
+		};
+		1CBA942B1CB8DE225A1B8557 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				941977B4CB0057FCD64D3EBB /* LinzReverbs.vst3 */,
+				6DD55A9E6CB941203C27874A /* LinzReverbs.component */,
+				ACD29D1254CFE70325835F67 /* LinzReverbs.app */,
+				8AE72E1657CE8B1964FEEE84 /* libLinzReverbs.a */,
+				E76287CEC00FA1583BA9E2E0 /* juce_vst3_helper */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2FC64CC6DDB517C377BC02F5 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				F837DDEF2DF2EBCA222AFD19 /* PluginProcessor.cpp */,
+				50655E1F88E7B0F2A40DEB4B /* PluginProcessor.h */,
+				B77BFC6CD566183F02493648 /* PluginEditor.cpp */,
+				2464D0E2A206E6597ABA660D /* PluginEditor.h */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		5E5AF766309889CA00509829 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				B7B93946DB26BC18019C5B75 /* juce_VST3ManifestHelper.cpp */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		65C5AE209904A973CFF0B810 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D44217DE2D6D4BD98D5AF0EE /* Info-VST3.plist */,
+				95009815220BD776B8646FB9 /* Info-AU.plist */,
+				422147ABE768CE944FB33284 /* Info-Standalone_Plugin.plist */,
+				80699F8B8DBBAAE6CBFDE442 /* Info-VST3_Manifest_Helper.plist */,
+				87A0482740628FFC9003C960 /* RecentFilesMenuTemplate.nib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7649D9160E3981AA04ECF06D /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				884DF20C802AE17CFB455170 /* LinzReverbs */,
+				01E38EA5D91C83A097CEE98C /* JUCE Modules */,
+				ACF0EBA559407F54F9F28E8E /* JUCE Library Code */,
+				65C5AE209904A973CFF0B810 /* Resources */,
+				DD51B4210E3D34479D45A467 /* Frameworks */,
+				1CBA942B1CB8DE225A1B8557 /* Products */,
+				5E5AF766309889CA00509829 /* Recovered References */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		884DF20C802AE17CFB455170 /* LinzReverbs */ = {
+			isa = PBXGroup;
+			children = (
+				2FC64CC6DDB517C377BC02F5 /* Source */,
+			);
+			name = LinzReverbs;
+			sourceTree = "<group>";
+		};
+		ACF0EBA559407F54F9F28E8E /* JUCE Library Code */ = {
+			isa = PBXGroup;
+			children = (
+				E1256A6B8E89F9383F577B4B /* include_juce_audio_basics.mm */,
+				01CEE6EA5DB21F04B4C0FEFC /* include_juce_audio_devices.mm */,
+				0CDB16A2C2CA97086D7BEAB0 /* include_juce_audio_formats.mm */,
+				43A5EC3861457F2DFD41AD37 /* include_juce_audio_formats_flac_1.c */,
+				EA78D129FA9B31F92A8F078B /* include_juce_audio_formats_flac_2.c */,
+				89088C512984583658FDBB2B /* include_juce_audio_formats_ogg.c */,
+				5E1259BC870BBC60106527CC /* include_juce_audio_formats_opus.c */,
+				FE6F5B16BAF1114E32FEA9A7 /* include_juce_audio_formats_opusfile.c */,
+				B6B650456EA6A68B5679C22D /* include_juce_audio_plugin_client_ARA.cpp */,
+				162C38D5B156DE0A69731CFF /* include_juce_audio_plugin_client_AU_1.mm */,
+				4B3C5EDEF71E63122BCF9F3D /* include_juce_audio_plugin_client_AU_2.mm */,
+				85CBA44A047846CEB4A574B6 /* include_juce_audio_plugin_client_Standalone.cpp */,
+				32DE5D34195665F30D9C49FF /* include_juce_audio_plugin_client_VST3.mm */,
+				B9C3E5A65759A3F696EC2313 /* include_juce_audio_processors.mm */,
+				946D186AD9EC7B6F484726B7 /* include_juce_audio_processors_headless.mm */,
+				AC6516D9A96B9C6B0BCBE2AC /* include_juce_audio_processors_headless_ara.cpp */,
+				D4FD2163D09F7840D4A3E31F /* include_juce_audio_processors_headless_lv2_libs.cpp */,
+				31F23FD58EECCFABFF9FF051 /* include_juce_audio_utils.mm */,
+				34C5E8551EADFEAEB85DFA31 /* include_juce_core.mm */,
+				30F45B5EF0099BBC05430FDC /* include_juce_core_CompilationTime.cpp */,
+				693FD70824A4538DD4424EDC /* include_juce_core_zlib.c */,
+				0FA82A6C7D0BCC902619F286 /* include_juce_data_structures.mm */,
+				1532FC60E766DD72F605675B /* include_juce_dsp.mm */,
+				42E14E75BD4CC3457FC86192 /* include_juce_events.mm */,
+				8BDCCE260567DB6AB59D9C64 /* include_juce_graphics.mm */,
+				7FC6B42C50947E3FA4D551EF /* include_juce_graphics_Harfbuzz.cpp */,
+				1C2F25E2D415FD655459F9A1 /* include_juce_graphics_libjpg_1.c */,
+				93805CC7899E86DB0420E6E1 /* include_juce_graphics_libjpg_2.c */,
+				148D5197577B525DA4CAF3FB /* include_juce_graphics_libjpg_3.c */,
+				536968CD9E0972D569CC214A /* include_juce_graphics_libpng.c */,
+				2A4CF51B14A2F589A09171FC /* include_juce_graphics_libwebp_dec.c */,
+				CFA2C33A357AA686DBDC7D88 /* include_juce_graphics_libwebp_dsp_dec.c */,
+				7497768BDF21D914D8973C71 /* include_juce_graphics_libwebp_dsp_dec_avx2.c */,
+				E0D40FF859670FABA2C57235 /* include_juce_graphics_libwebp_dsp_dec_sse41.c */,
+				E7A23F394E23CF4028F36AC8 /* include_juce_graphics_libwebp_dsp_enc.c */,
+				B4F40A09633DE54F826ABBB6 /* include_juce_graphics_libwebp_dsp_enc_avx2.c */,
+				63A986DC20DBABA004217DE3 /* include_juce_graphics_libwebp_dsp_enc_sse41.c */,
+				24892AB80546AC5BF7AFC3D9 /* include_juce_graphics_libwebp_enc.c */,
+				DF28CE2F7A060E7FCAC15A9F /* include_juce_graphics_libwebp_sharpyuv.c */,
+				E57846F96CF7254E76C447E1 /* include_juce_graphics_libwebp_utils.c */,
+				D45FB342905ACA5775367606 /* include_juce_graphics_lunasvg.c */,
+				D9EB44AF80CD80F3D6CA9FB2 /* include_juce_graphics_Sheenbidi.c */,
+				25FFF80258EE91511A7A4532 /* include_juce_gui_basics.mm */,
+				13C3030DEE7402E0C87348E9 /* include_juce_gui_basics_2.cpp */,
+				725ACD0EB7CCE8B9447928E7 /* include_juce_gui_basics_3.cpp */,
+				0040B95A176B0C902AC57AFB /* include_juce_gui_basics_4.cpp */,
+				66F9E3D250B770374DB8141A /* include_juce_gui_basics_5.cpp */,
+				519C7046BCCF445DACC00715 /* include_juce_gui_extra.mm */,
+				FBF6D415A5DF291BA340CD69 /* include_juce_osc.cpp */,
+				A0568F50CC5423D53766ADF1 /* JuceHeader.h */,
+				1548DD29A4B97116E713D146 /* JucePluginDefines.h */,
+			);
+			name = "JUCE Library Code";
+			sourceTree = "<group>";
+		};
+		DD51B4210E3D34479D45A467 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B8FCEF11F8D837B7ED20E2A /* AudioUnit.framework */,
+				55A3503F3B426D10DFCF3046 /* Accelerate.framework */,
+				6C1051DDA382C695C628E6F8 /* AudioToolbox.framework */,
+				B9702A89F4B49211DE35F83C /* Cocoa.framework */,
+				20A4FE976A2E129D8E4C25C2 /* CoreAudio.framework */,
+				274E970320FE0029925A0D7E /* CoreAudioKit.framework */,
+				FA0CC6C1999B1D21081D5402 /* CoreMIDI.framework */,
+				98F5714D979413E8CA20D91D /* DiscRecording.framework */,
+				CA9337D43855CB0829E2B922 /* Foundation.framework */,
+				1919C14FD92D25D83DFB6423 /* IOKit.framework */,
+				9212EBFE0916B2C38A0D4920 /* QuartzCore.framework */,
+				1A98504D23D8DF067628BC71 /* Security.framework */,
+				E481DFED2610459283231790 /* WebKit.framework */,
+				2F87D9ECD9196004A72AA508 /* Metal.framework */,
+				78CBE69E224D81D1F7B717D7 /* MetalKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00607DC12BCD37A86816394E /* LinzReverbs - VST3 Manifest Helper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71EC06E525F27E57ECD76005 /* Build configuration list for PBXNativeTarget "LinzReverbs - VST3 Manifest Helper" */;
+			buildPhases = (
+				2F71D35E3917908634A66230 /* Sources */,
+				FC4794D88D5F6A65D33A175A /* Frameworks */,
+				5BCED7772FD6F1D471EDC0A7 /* Sign Target */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LinzReverbs - VST3 Manifest Helper";
+			productName = LinzReverbs;
+			productReference = E76287CEC00FA1583BA9E2E0 /* juce_vst3_helper */;
+			productType = "com.apple.product-type.tool";
+		};
+		180F73F2F6BBD80169B3DB78 /* LinzReverbs - Shared Code */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A156DA434467DE82D2D938A /* Build configuration list for PBXNativeTarget "LinzReverbs - Shared Code" */;
+			buildPhases = (
+				1773EAEDEB93ED41C0E76099 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LinzReverbs - Shared Code";
+			productName = LinzReverbs;
+			productReference = 8AE72E1657CE8B1964FEEE84 /* libLinzReverbs.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7B9663F8DF28C6D5CEADDEE8 /* LinzReverbs - AU */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF189B9536ED3F9B9C8577CA /* Build configuration list for PBXNativeTarget "LinzReverbs - AU" */;
+			buildPhases = (
+				AD0B5D3F9779C0339B11D677 /* Resources */,
+				7505EBFDD002006A004F5649 /* Sources */,
+				3C07B86507A03C0B9E7C9E65 /* Frameworks */,
+				15CBD1323E5704E7C55D0267 /* Sign Target */,
+				EE123A2FCDA0846A3588D6DF /* Install Target */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				548EF2BBCD2A2EDB633213E9 /* PBXTargetDependency */,
+			);
+			name = "LinzReverbs - AU";
+			productName = LinzReverbs;
+			productReference = 6DD55A9E6CB941203C27874A /* LinzReverbs.component */;
+			productType = "com.apple.product-type.bundle";
+		};
+		7DD12FE83FED42907BF6D15E /* LinzReverbs - Standalone Plugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A8C821BB9B878EC248709FD /* Build configuration list for PBXNativeTarget "LinzReverbs - Standalone Plugin" */;
+			buildPhases = (
+				2EFC604A7846ECFE63FE5463 /* Resources */,
+				2C127B1146B5845887DBD191 /* Sources */,
+				DC394E046844EE123092BCBF /* Frameworks */,
+				59EED9D0F66E45D7AEE4BB3B /* Sign Target */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F962EEACE377E0B082EA1467 /* PBXTargetDependency */,
+			);
+			name = "LinzReverbs - Standalone Plugin";
+			productName = LinzReverbs;
+			productReference = ACD29D1254CFE70325835F67 /* LinzReverbs.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F72CFF95CBA98D0AF2B72D78 /* LinzReverbs - VST3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E196EE992F060D9D1A85796C /* Build configuration list for PBXNativeTarget "LinzReverbs - VST3" */;
+			buildPhases = (
+				F27BF10CB5BB7986CAC5DE9C /* Resources */,
+				81B7F47A63C6FBA0AB4FA102 /* Sources */,
+				BC5A72A4DA0D1B87ED27EC3C /* Frameworks */,
+				C4DF0680D8BCBB648D001D95 /* Create VST3 Manifest */,
+				A03164F51AE60A07FB685685 /* Sign Target */,
+				71267FD2B376E1C91ECF60A2 /* Install Target */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A4EF59AFCA10E646E48986F /* PBXTargetDependency */,
+				C4A46362222D08C1889C9123 /* PBXTargetDependency */,
+			);
+			name = "LinzReverbs - VST3";
+			productName = LinzReverbs;
+			productReference = 941977B4CB0057FCD64D3EBB /* LinzReverbs.vst3 */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A917BB820936DDC38CA236FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1340;
+				ORGANIZATIONNAME = "";
+				TargetAttributes = {
+					00607DC12BCD37A86816394E = {
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.HardenedRuntime = {
+								enabled = 0;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					180F73F2F6BBD80169B3DB78 = {
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.HardenedRuntime = {
+								enabled = 0;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					7B9663F8DF28C6D5CEADDEE8 = {
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.HardenedRuntime = {
+								enabled = 0;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					7DD12FE83FED42907BF6D15E = {
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.HardenedRuntime = {
+								enabled = 0;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					AF2F87DBA12E1F60E2F7C7AE = {
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.HardenedRuntime = {
+								enabled = 0;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					F72CFF95CBA98D0AF2B72D78 = {
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.HardenedRuntime = {
+								enabled = 0;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 64BF856F5C2840FFE0AE2254 /* Build configuration list for PBXProject "LinzReverbs" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7649D9160E3981AA04ECF06D /* Source */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF2F87DBA12E1F60E2F7C7AE /* LinzReverbs - All */,
+				F72CFF95CBA98D0AF2B72D78 /* LinzReverbs - VST3 */,
+				7B9663F8DF28C6D5CEADDEE8 /* LinzReverbs - AU */,
+				7DD12FE83FED42907BF6D15E /* LinzReverbs - Standalone Plugin */,
+				180F73F2F6BBD80169B3DB78 /* LinzReverbs - Shared Code */,
+				00607DC12BCD37A86816394E /* LinzReverbs - VST3 Manifest Helper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2EFC604A7846ECFE63FE5463 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E5AF765309889CA00509829 /* RecentFilesMenuTemplate.nib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD0B5D3F9779C0339B11D677 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E5AF764309889CA00509829 /* RecentFilesMenuTemplate.nib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F27BF10CB5BB7986CAC5DE9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52ED9CC561556E1040C4D6AD /* RecentFilesMenuTemplate.nib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15CBD1323E5704E7C55D0267 /* Sign Target */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Sign Target";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\necho Signing Identity:\t${EXPANDED_CODE_SIGN_IDENTITY_NAME:-${CODE_SIGN_IDENTITY}}\n\nentitlementsFile=\"${TARGET_TEMP_DIR}/${FULL_PRODUCT_NAME}.xcent\"\n\nif [[ ! -f \"${entitlementsFile}\" ]]; then\n  entitlementsFile=\"\"\nfi\n\necho Entitlements File:\t${entitlementsFile:-None}\necho\necho Running codesign --force --sign \\\"${EXPANDED_CODE_SIGN_IDENTITY:-${CODE_SIGN_IDENTITY}}\\\" --verbose=4 --timestamp  ${entitlementsFile:+--entitlements \\\"${entitlementsFile}\\\"} --generate-entitlement-der \\\"${CODESIGNING_FOLDER_PATH}\\\"\ncodesign --force --sign \"${EXPANDED_CODE_SIGN_IDENTITY:-${CODE_SIGN_IDENTITY}}\" --verbose=4 --timestamp  ${entitlementsFile:+--entitlements \"${entitlementsFile}\"} --generate-entitlement-der \"${CODESIGNING_FOLDER_PATH}\"\necho\necho Running codesign --verify --deep --verbose=4 \\\"${CODESIGNING_FOLDER_PATH}\\\"\ncodesign --verify --deep --verbose=4 \"${CODESIGNING_FOLDER_PATH}\"\n";
+		};
+		59EED9D0F66E45D7AEE4BB3B /* Sign Target */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Sign Target";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\necho Signing Identity:\t${EXPANDED_CODE_SIGN_IDENTITY_NAME:-${CODE_SIGN_IDENTITY}}\n\nentitlementsFile=\"${TARGET_TEMP_DIR}/${FULL_PRODUCT_NAME}.xcent\"\n\nif [[ ! -f \"${entitlementsFile}\" ]]; then\n  entitlementsFile=\"\"\nfi\n\necho Entitlements File:\t${entitlementsFile:-None}\necho\necho Running codesign --force --sign \\\"${EXPANDED_CODE_SIGN_IDENTITY:-${CODE_SIGN_IDENTITY}}\\\" --verbose=4 --timestamp  ${entitlementsFile:+--entitlements \\\"${entitlementsFile}\\\"} --generate-entitlement-der \\\"${CODESIGNING_FOLDER_PATH}\\\"\ncodesign --force --sign \"${EXPANDED_CODE_SIGN_IDENTITY:-${CODE_SIGN_IDENTITY}}\" --verbose=4 --timestamp  ${entitlementsFile:+--entitlements \"${entitlementsFile}\"} --generate-entitlement-der \"${CODESIGNING_FOLDER_PATH}\"\necho\necho Running codesign --verify --deep --verbose=4 \\\"${CODESIGNING_FOLDER_PATH}\\\"\ncodesign --verify --deep --verbose=4 \"${CODESIGNING_FOLDER_PATH}\"\n";
+		};
+		5BCED7772FD6F1D471EDC0A7 /* Sign Target */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Sign Target";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\necho Signing Identity:\t${EXPANDED_CODE_SIGN_IDENTITY_NAME:-${CODE_SIGN_IDENTITY}}\n\nentitlementsFile=\"${TARGET_TEMP_DIR}/${FULL_PRODUCT_NAME}.xcent\"\n\nif [[ ! -f \"${entitlementsFile}\" ]]; then\n  entitlementsFile=\"\"\nfi\n\necho Entitlements File:\t${entitlementsFile:-None}\necho\necho Running codesign --force --sign \\\"${EXPANDED_CODE_SIGN_IDENTITY:-${CODE_SIGN_IDENTITY}}\\\" --verbose=4 --timestamp  ${entitlementsFile:+--entitlements \\\"${entitlementsFile}\\\"} --generate-entitlement-der \\\"${CODESIGNING_FOLDER_PATH}\\\"\ncodesign --force --sign \"${EXPANDED_CODE_SIGN_IDENTITY:-${CODE_SIGN_IDENTITY}}\" --verbose=4 --timestamp  ${entitlementsFile:+--entitlements \"${entitlementsFile}\"} --generate-entitlement-der \"${CODESIGNING_FOLDER_PATH}\"\necho\necho Running codesign --verify --deep --verbose=4 \\\"${CODESIGNING_FOLDER_PATH}\\\"\ncodesign --verify --deep --verbose=4 \"${CODESIGNING_FOLDER_PATH}\"\n";
+		};
+		71267FD2B376E1C91ECF60A2 /* Install Target */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Install Target";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\nif [[ \"${CONFIGURATION}\" == \"Debug\" ]]; then\n  destinationPath=\"${HOME}/Library/Audio/Plug-Ins/VST3/$(basename \"${TARGET_BUILD_DIR}/${WRAPPER_NAME:-${EXECUTABLE_NAME}}\")\"\nfi\n\nif [[ \"${CONFIGURATION}\" == \"Release\" ]]; then\n  destinationPath=\"${HOME}/Library/Audio/Plug-Ins/VST3/$(basename \"${TARGET_BUILD_DIR}/${WRAPPER_NAME:-${EXECUTABLE_NAME}}\")\"\nfi\n\nif [[ -n \"${destinationPath-}\" ]]; then\n  echo Running rm -rf \\\"${destinationPath}\\\"\n  rm -rf \"${destinationPath}\"\n  echo Running ditto \\\"${TARGET_BUILD_DIR}/${WRAPPER_NAME:-${EXECUTABLE_NAME}}\\\" \\\"${destinationPath}\\\"\n  ditto \"${TARGET_BUILD_DIR}/${WRAPPER_NAME:-${EXECUTABLE_NAME}}\" \"${destinationPath}\"\nfi\n";
+		};
+		A03164F51AE60A07FB685685 /* Sign Target */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Sign Target";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\necho Signing Identity:\t${EXPANDED_CODE_SIGN_IDENTITY_NAME:-${CODE_SIGN_IDENTITY}}\n\nentitlementsFile=\"${TARGET_TEMP_DIR}/${FULL_PRODUCT_NAME}.xcent\"\n\nif [[ ! -f \"${entitlementsFile}\" ]]; then\n  entitlementsFile=\"\"\nfi\n\necho Entitlements File:\t${entitlementsFile:-None}\necho\necho Running codesign --force --sign \\\"${EXPANDED_CODE_SIGN_IDENTITY:-${CODE_SIGN_IDENTITY}}\\\" --verbose=4 --timestamp  ${entitlementsFile:+--entitlements \\\"${entitlementsFile}\\\"} --generate-entitlement-der \\\"${CODESIGNING_FOLDER_PATH}\\\"\ncodesign --force --sign \"${EXPANDED_CODE_SIGN_IDENTITY:-${CODE_SIGN_IDENTITY}}\" --verbose=4 --timestamp  ${entitlementsFile:+--entitlements \"${entitlementsFile}\"} --generate-entitlement-der \"${CODESIGNING_FOLDER_PATH}\"\necho\necho Running codesign --verify --deep --verbose=4 \\\"${CODESIGNING_FOLDER_PATH}\\\"\ncodesign --verify --deep --verbose=4 \"${CODESIGNING_FOLDER_PATH}\"\n";
+		};
+		C4DF0680D8BCBB648D001D95 /* Create VST3 Manifest */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Create VST3 Manifest";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\necho Running \\\"${CONFIGURATION_BUILD_DIR}/juce_vst3_helper\\\" \\> \\\"${CONFIGURATION_BUILD_DIR}/${WRAPPER_NAME}/Contents/Resources/moduleinfo.json\\\"\n\"${CONFIGURATION_BUILD_DIR}/juce_vst3_helper\" > \"${CONFIGURATION_BUILD_DIR}/${WRAPPER_NAME}/Contents/Resources/moduleinfo.json\"\n";
+		};
+		EE123A2FCDA0846A3588D6DF /* Install Target */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Install Target";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\nif [[ \"${CONFIGURATION}\" == \"Debug\" ]]; then\n  destinationPath=\"${HOME}/Library/Audio/Plug-Ins/Components/$(basename \"${TARGET_BUILD_DIR}/${WRAPPER_NAME:-${EXECUTABLE_NAME}}\")\"\nfi\n\nif [[ \"${CONFIGURATION}\" == \"Release\" ]]; then\n  destinationPath=\"${HOME}/Library/Audio/Plug-Ins/Components/$(basename \"${TARGET_BUILD_DIR}/${WRAPPER_NAME:-${EXECUTABLE_NAME}}\")\"\nfi\n\nif [[ -n \"${destinationPath-}\" ]]; then\n  echo Running rm -rf \\\"${destinationPath}\\\"\n  rm -rf \"${destinationPath}\"\n  echo Running ditto \\\"${TARGET_BUILD_DIR}/${WRAPPER_NAME:-${EXECUTABLE_NAME}}\\\" \\\"${destinationPath}\\\"\n  ditto \"${TARGET_BUILD_DIR}/${WRAPPER_NAME:-${EXECUTABLE_NAME}}\" \"${destinationPath}\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1773EAEDEB93ED41C0E76099 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C95EA440AF0281EB9579A4C /* PluginProcessor.cpp in Sources */,
+				3AD23A0024FCE99267A41D20 /* PluginEditor.cpp in Sources */,
+				AED2A6DF977DCECBA27D6BDE /* include_juce_audio_basics.mm in Sources */,
+				C45C8CBBE9E05EF8D067CDCA /* include_juce_audio_devices.mm in Sources */,
+				85F8B3E9BBCB2D3472449CD7 /* include_juce_audio_formats.mm in Sources */,
+				40D2A519CD1C01E97C439C61 /* include_juce_audio_formats_flac_1.c in Sources */,
+				C320159772755D7D3CEA3F78 /* include_juce_audio_formats_flac_2.c in Sources */,
+				295F1C345D9480378BD19359 /* include_juce_audio_formats_ogg.c in Sources */,
+				5A42F1CC377D5F71BA9EC6BE /* include_juce_audio_formats_opus.c in Sources */,
+				FB23C7627D5EBDFF2882EE63 /* include_juce_audio_formats_opusfile.c in Sources */,
+				AFE43D28BDF9ED7FBBB523B3 /* include_juce_audio_plugin_client_ARA.cpp in Sources */,
+				189453B0BEF2CD589FD0F626 /* include_juce_audio_processors.mm in Sources */,
+				D03E0E628725873EF8FF3CF9 /* include_juce_audio_processors_headless.mm in Sources */,
+				961BFA4BF57C0CD5A41305F5 /* include_juce_audio_processors_headless_ara.cpp in Sources */,
+				0AF566CCAD7BDC28DCFA4596 /* include_juce_audio_processors_headless_lv2_libs.cpp in Sources */,
+				1407814E7DC318F828CE1C57 /* include_juce_audio_utils.mm in Sources */,
+				08BB8FBF820E9AE58C8E50A4 /* include_juce_core.mm in Sources */,
+				AACCB108DD268F8912A7DB18 /* include_juce_core_CompilationTime.cpp in Sources */,
+				E97C3C0579E858BA94AB8DC6 /* include_juce_core_zlib.c in Sources */,
+				217970F5A73552E7A2E1780F /* include_juce_data_structures.mm in Sources */,
+				B686E1547E7CAA3046AF1D89 /* include_juce_dsp.mm in Sources */,
+				442D6EE1CDBEAF9EBAAF661F /* include_juce_events.mm in Sources */,
+				582155B79464C63C73ABB33F /* include_juce_graphics.mm in Sources */,
+				16BB407F3CF31707112CC061 /* include_juce_graphics_Harfbuzz.cpp in Sources */,
+				092976A461F6746E507B4BE1 /* include_juce_graphics_libjpg_1.c in Sources */,
+				69BF47CFB6BAD405A528F6E8 /* include_juce_graphics_libjpg_2.c in Sources */,
+				B1DFC3DA95E37BA1CEA369DF /* include_juce_graphics_libjpg_3.c in Sources */,
+				F4E95CEE5B0B42016F569BEA /* include_juce_graphics_libpng.c in Sources */,
+				E7301007A7305834A2EFFCF4 /* include_juce_graphics_libwebp_dec.c in Sources */,
+				428245764C62BC0A06DE5E54 /* include_juce_graphics_libwebp_dsp_dec.c in Sources */,
+				D9102963947C4A51D2D8E45F /* include_juce_graphics_libwebp_dsp_dec_avx2.c in Sources */,
+				E976AD793D4524C89218E12F /* include_juce_graphics_libwebp_dsp_dec_sse41.c in Sources */,
+				3C6468430A0E447623EF130B /* include_juce_graphics_libwebp_dsp_enc.c in Sources */,
+				51D289B436759463DB8638F3 /* include_juce_graphics_libwebp_dsp_enc_avx2.c in Sources */,
+				175BC2767CDC26772BAEC41F /* include_juce_graphics_libwebp_dsp_enc_sse41.c in Sources */,
+				5441F01A68A91FDB7FB0362D /* include_juce_graphics_libwebp_enc.c in Sources */,
+				07FE39574C5B9BD74E283644 /* include_juce_graphics_libwebp_sharpyuv.c in Sources */,
+				5A8EC679D4BC7C515F54A4D3 /* include_juce_graphics_libwebp_utils.c in Sources */,
+				2CF7C40BE1D49421EBFA5AF2 /* include_juce_graphics_lunasvg.c in Sources */,
+				837FF682A995E127DB30AF85 /* include_juce_graphics_Sheenbidi.c in Sources */,
+				CF390018896DA53A967B2F9F /* include_juce_gui_basics.mm in Sources */,
+				291206E2F95865E64385EDB9 /* include_juce_gui_basics_2.cpp in Sources */,
+				ADF9C387499FF73F0D6B956B /* include_juce_gui_basics_3.cpp in Sources */,
+				D3F30F5CA37B2814E196CD65 /* include_juce_gui_basics_4.cpp in Sources */,
+				6451A61197F1FE4F946A2FB4 /* include_juce_gui_basics_5.cpp in Sources */,
+				3890ECE71CC848A97D79CDB8 /* include_juce_gui_extra.mm in Sources */,
+				820E769BA639D24226F55FD2 /* include_juce_osc.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C127B1146B5845887DBD191 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E08EEADFD2F526ECCBC68AB /* include_juce_audio_plugin_client_Standalone.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F71D35E3917908634A66230 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5432084695341A55B192396E /* juce_VST3ManifestHelper.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7505EBFDD002006A004F5649 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				823442C6281CD6B15D1C0790 /* include_juce_audio_plugin_client_AU_1.mm in Sources */,
+				75B0696701015B56978862FB /* include_juce_audio_plugin_client_AU_2.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81B7F47A63C6FBA0AB4FA102 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD105C13C0629A855930A3F8 /* include_juce_audio_plugin_client_VST3.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		16F7031E11728279C0B73DDE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7DD12FE83FED42907BF6D15E /* LinzReverbs - Standalone Plugin */;
+			targetProxy = 5E5AF76D309889CC00509829 /* PBXContainerItemProxy */;
+		};
+		3335132E47F8C6B1DAE2E5D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B9663F8DF28C6D5CEADDEE8 /* LinzReverbs - AU */;
+			targetProxy = 5E5AF76C309889CC00509829 /* PBXContainerItemProxy */;
+		};
+		3C97A40BE87A3772F8671366 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 180F73F2F6BBD80169B3DB78 /* LinzReverbs - Shared Code */;
+			targetProxy = 5E5AF76E309889CC00509829 /* PBXContainerItemProxy */;
+		};
+		548EF2BBCD2A2EDB633213E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 180F73F2F6BBD80169B3DB78 /* LinzReverbs - Shared Code */;
+			targetProxy = 5E5AF76A309889CC00509829 /* PBXContainerItemProxy */;
+		};
+		5A4EF59AFCA10E646E48986F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 180F73F2F6BBD80169B3DB78 /* LinzReverbs - Shared Code */;
+			targetProxy = 5E5AF767309889CC00509829 /* PBXContainerItemProxy */;
+		};
+		98BA539B76AC11051C4FB074 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00607DC12BCD37A86816394E /* LinzReverbs - VST3 Manifest Helper */;
+			targetProxy = 5E5AF76F309889CC00509829 /* PBXContainerItemProxy */;
+		};
+		C4A46362222D08C1889C9123 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00607DC12BCD37A86816394E /* LinzReverbs - VST3 Manifest Helper */;
+			targetProxy = 5E5AF768309889CC00509829 /* PBXContainerItemProxy */;
+		};
+		F671E2E4D93247B8CD7FADBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F72CFF95CBA98D0AF2B72D78 /* LinzReverbs - VST3 */;
+			targetProxy = 5E5AF76B309889CC00509829 /* PBXContainerItemProxy */;
+		};
+		F962EEACE377E0B082EA1467 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 180F73F2F6BBD80169B3DB78 /* LinzReverbs - Shared Code */;
+			targetProxy = 5E5AF769309889CC00509829 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0B543138A8D0077D94A6B8E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = NO;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CODE_SIGN_FLAGS = "--dryrun";
+				PRODUCT_NAME = LinzReverbs;
+				SDKROOT = macosx;
+				WARNING_CFLAGS = "-Wreorder";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		152028B9505AB7A344BD7C9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
+				DEAD_CODE_STRIPPING = YES;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				EXCLUDED_ARCHS = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_NDEBUG=1",
+					"NDEBUG=1",
+					"JUCE_PROJUCER_VERSION=0x90004",
+					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_processors=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_processors_headless=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_utils=1",
+					"JUCE_MODULE_AVAILABLE_juce_core=1",
+					"JUCE_MODULE_AVAILABLE_juce_data_structures=1",
+					"JUCE_MODULE_AVAILABLE_juce_dsp=1",
+					"JUCE_MODULE_AVAILABLE_juce_events=1",
+					"JUCE_MODULE_AVAILABLE_juce_graphics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_extra=1",
+					"JUCE_MODULE_AVAILABLE_juce_osc=1",
+					"JUCE_WEBVIEW_INTEROP_LIBRARY_VERSION=\\\"1.0.0\\\"",
+					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+					"JUCE_VST3_CAN_REPLACE_VST2=0",
+					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
+					"JucePlugin_Build_VST=0",
+					"JucePlugin_Build_VST3=1",
+					"JucePlugin_Build_AU=0",
+					"JucePlugin_Build_AUv3=0",
+					"JucePlugin_Build_AAX=0",
+					"JucePlugin_Build_Standalone=0",
+					"JucePlugin_Build_Unity=0",
+					"JucePlugin_Build_LV2=0",
+					"JucePlugin_Enable_IAA=0",
+					"JucePlugin_Enable_ARA=0",
+					"JucePlugin_Name=\\\"LinzReverbs\\\"",
+					"JucePlugin_Desc=\\\"LinzReverbs\\\"",
+					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"www.yourcompany.com\\\"",
+					"JucePlugin_ManufacturerEmail=\\\"\\\"",
+					"JucePlugin_ManufacturerCode=0x4d616e75",
+					"JucePlugin_PluginCode=0x4a7a6931",
+					"JucePlugin_IsSynth=0",
+					"JucePlugin_WantsMidiInput=0",
+					"JucePlugin_ProducesMidiOutput=0",
+					"JucePlugin_IsMidiEffect=0",
+					"JucePlugin_EditorRequiresKeyboardFocus=0",
+					"JucePlugin_Version=1.0.0",
+					"JucePlugin_VersionCode=0x10000",
+					"JucePlugin_VersionString=\\\"1.0.0\\\"",
+					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
+					"JucePlugin_VSTCategory=kPlugCategEffect",
+					"JucePlugin_LV2PluginClass=Plugin",
+					"JucePlugin_Vst3Category=\\\"Fx\\\"",
+					"JucePlugin_AUMainType=\\'aufx\\'",
+					"JucePlugin_AUSubType=JucePlugin_PluginCode",
+					"JucePlugin_AUExportPrefix=LinzReverbsAU",
+					"JucePlugin_AUExportPrefixQuoted=\\\"LinzReverbsAU\\\"",
+					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_CFBundleIdentifier=com.yourcompany.LinzReverbs",
+					"JucePlugin_AAXIdentifier=com.yourcompany.LinzReverbs",
+					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
+					"JucePlugin_AAXCategory=0",
+					"JucePlugin_AAXDisableBypass=0",
+					"JucePlugin_AAXDisableMultiMono=0",
+					"JucePlugin_IAAType=0x61757278",
+					"JucePlugin_IAASubType=JucePlugin_PluginCode",
+					"JucePlugin_IAAName=\\\"yourcompany:\\ LinzReverbs\\\"",
+					"JucePlugin_VSTNumMidiInputs=16",
+					"JucePlugin_VSTNumMidiOutputs=16",
+					"JucePlugin_ARAContentTypes=0",
+					"JucePlugin_ARATransformationFlags=0",
+					"JucePlugin_ARAFactoryID=\\\"com.yourcompany.LinzReverbs.factory\\\"",
+					"JucePlugin_ARADocumentArchiveID=\\\"com.yourcompany.LinzReverbs.aradocumentarchive.1.0.0\\\"",
+					"JucePlugin_ARACompatibleArchiveIDs=\\\"\\\"",
+					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
+					"JUCER_XCODE_MAC_F6D2F4CF=1",
+					"JUCE_APP_VERSION=1.0.0",
+					"JUCE_APP_VERSION_HEX=0x10000",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(HOME)/JUCE/modules/juce_audio_processors_headless/format_types/VST3_SDK",
+					"$(SRCROOT)/../../JuceLibraryCode",
+					"$(HOME)/JUCE/modules",
+					"$(HOME)/JUCE/modules/juce_audio_plugin_client/AU",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Info-VST3.plist";
+				INFOPLIST_PREPROCESS = NO;
+				INSTALL_PATH = "$(HOME)/Library/Audio/Plug-Ins/VST3";
+				LIBRARY_STYLE = Bundle;
+				LLVM_LTO = YES;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				MTL_HEADER_SEARCH_PATHS = "$(HOME)/JUCE/modules/juce_audio_processors_headless/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode $(HOME)/JUCE/modules $(HOME)/JUCE/modules/juce_audio_plugin_client/AU";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-bundle",
+					"-lLinzReverbs",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.LinzReverbs;
+				PRODUCT_NAME = LinzReverbs;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
+				WRAPPER_EXTENSION = vst3;
+			};
+			name = Release;
+		};
+		1C1D0F30F968AC9825B6A285 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
+				DEAD_CODE_STRIPPING = YES;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				EXCLUDED_ARCHS = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_NDEBUG=1",
+					"NDEBUG=1",
+					"JUCE_PROJUCER_VERSION=0x90004",
+					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_processors=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_processors_headless=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_utils=1",
+					"JUCE_MODULE_AVAILABLE_juce_core=1",
+					"JUCE_MODULE_AVAILABLE_juce_data_structures=1",
+					"JUCE_MODULE_AVAILABLE_juce_dsp=1",
+					"JUCE_MODULE_AVAILABLE_juce_events=1",
+					"JUCE_MODULE_AVAILABLE_juce_graphics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_extra=1",
+					"JUCE_MODULE_AVAILABLE_juce_osc=1",
+					"JUCE_WEBVIEW_INTEROP_LIBRARY_VERSION=\\\"1.0.0\\\"",
+					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+					"JUCE_VST3_CAN_REPLACE_VST2=0",
+					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
+					"JucePlugin_Build_VST=0",
+					"JucePlugin_Build_VST3=0",
+					"JucePlugin_Build_AU=0",
+					"JucePlugin_Build_AUv3=0",
+					"JucePlugin_Build_AAX=0",
+					"JucePlugin_Build_Standalone=0",
+					"JucePlugin_Build_Unity=0",
+					"JucePlugin_Build_LV2=0",
+					"JucePlugin_Enable_IAA=0",
+					"JucePlugin_Enable_ARA=0",
+					"JucePlugin_Name=\\\"LinzReverbs\\\"",
+					"JucePlugin_Desc=\\\"LinzReverbs\\\"",
+					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"www.yourcompany.com\\\"",
+					"JucePlugin_ManufacturerEmail=\\\"\\\"",
+					"JucePlugin_ManufacturerCode=0x4d616e75",
+					"JucePlugin_PluginCode=0x4a7a6931",
+					"JucePlugin_IsSynth=0",
+					"JucePlugin_WantsMidiInput=0",
+					"JucePlugin_ProducesMidiOutput=0",
+					"JucePlugin_IsMidiEffect=0",
+					"JucePlugin_EditorRequiresKeyboardFocus=0",
+					"JucePlugin_Version=1.0.0",
+					"JucePlugin_VersionCode=0x10000",
+					"JucePlugin_VersionString=\\\"1.0.0\\\"",
+					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
+					"JucePlugin_VSTCategory=kPlugCategEffect",
+					"JucePlugin_LV2PluginClass=Plugin",
+					"JucePlugin_Vst3Category=\\\"Fx\\\"",
+					"JucePlugin_AUMainType=\\'aufx\\'",
+					"JucePlugin_AUSubType=JucePlugin_PluginCode",
+					"JucePlugin_AUExportPrefix=LinzReverbsAU",
+					"JucePlugin_AUExportPrefixQuoted=\\\"LinzReverbsAU\\\"",
+					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_CFBundleIdentifier=com.yourcompany.LinzReverbs",
+					"JucePlugin_AAXIdentifier=com.yourcompany.LinzReverbs",
+					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
+					"JucePlugin_AAXCategory=0",
+					"JucePlugin_AAXDisableBypass=0",
+					"JucePlugin_AAXDisableMultiMono=0",
+					"JucePlugin_IAAType=0x61757278",
+					"JucePlugin_IAASubType=JucePlugin_PluginCode",
+					"JucePlugin_IAAName=\\\"yourcompany:\\ LinzReverbs\\\"",
+					"JucePlugin_VSTNumMidiInputs=16",
+					"JucePlugin_VSTNumMidiOutputs=16",
+					"JucePlugin_ARAContentTypes=0",
+					"JucePlugin_ARATransformationFlags=0",
+					"JucePlugin_ARAFactoryID=\\\"com.yourcompany.LinzReverbs.factory\\\"",
+					"JucePlugin_ARADocumentArchiveID=\\\"com.yourcompany.LinzReverbs.aradocumentarchive.1.0.0\\\"",
+					"JucePlugin_ARACompatibleArchiveIDs=\\\"\\\"",
+					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
+					"JUCER_XCODE_MAC_F6D2F4CF=1",
+					"JUCE_APP_VERSION=1.0.0",
+					"JUCE_APP_VERSION_HEX=0x10000",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"$(HOME)/JUCE/modules/juce_audio_processors_headless/format_types/VST3_SDK",
+					"$(SRCROOT)/../../JuceLibraryCode",
+					"$(HOME)/JUCE/modules",
+					"$(HOME)/JUCE/modules/juce_audio_plugin_client/AU",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Info-VST3_Manifest_Helper.plist";
+				INFOPLIST_PREPROCESS = NO;
+				LLVM_LTO = YES;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				MTL_HEADER_SEARCH_PATHS = "$(HOME)/JUCE/modules/juce_audio_processors_headless/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode $(HOME)/JUCE/modules $(HOME)/JUCE/modules/juce_audio_plugin_client/AU";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_CODE_SIGN_FLAGS = "";
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.LinzReverbs;
+				PRODUCT_NAME = juce_vst3_helper;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
+			};
+			name = Release;
+		};
+		28179FDE90315A3594539B7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = NO;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CODE_SIGN_FLAGS = "--dryrun";
+				PRODUCT_NAME = LinzReverbs;
+				SDKROOT = macosx;
+				WARNING_CFLAGS = "-Wreorder";
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		3B0184045A8CF47C3D0EA56F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				EXCLUDED_ARCHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_DEBUG=1",
+					"DEBUG=1",
+					"JUCE_PROJUCER_VERSION=0x90004",
+					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_processors=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_processors_headless=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_utils=1",
+					"JUCE_MODULE_AVAILABLE_juce_core=1",
+					"JUCE_MODULE_AVAILABLE_juce_data_structures=1",
+					"JUCE_MODULE_AVAILABLE_juce_dsp=1",
+					"JUCE_MODULE_AVAILABLE_juce_events=1",
+					"JUCE_MODULE_AVAILABLE_juce_graphics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_extra=1",
+					"JUCE_MODULE_AVAILABLE_juce_osc=1",
+					"JUCE_WEBVIEW_INTEROP_LIBRARY_VERSION=\\\"1.0.0\\\"",
+					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+					"JUCE_VST3_CAN_REPLACE_VST2=0",
+					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
+					"JucePlugin_Build_VST=0",
+					"JucePlugin_Build_VST3=0",
+					"JucePlugin_Build_AU=1",
+					"JucePlugin_Build_AUv3=0",
+					"JucePlugin_Build_AAX=0",
+					"JucePlugin_Build_Standalone=0",
+					"JucePlugin_Build_Unity=0",
+					"JucePlugin_Build_LV2=0",
+					"JucePlugin_Enable_IAA=0",
+					"JucePlugin_Enable_ARA=0",
+					"JucePlugin_Name=\\\"LinzReverbs\\\"",
+					"JucePlugin_Desc=\\\"LinzReverbs\\\"",
+					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"www.yourcompany.com\\\"",
+					"JucePlugin_ManufacturerEmail=\\\"\\\"",
+					"JucePlugin_ManufacturerCode=0x4d616e75",
+					"JucePlugin_PluginCode=0x4a7a6931",
+					"JucePlugin_IsSynth=0",
+					"JucePlugin_WantsMidiInput=0",
+					"JucePlugin_ProducesMidiOutput=0",
+					"JucePlugin_IsMidiEffect=0",
+					"JucePlugin_EditorRequiresKeyboardFocus=0",
+					"JucePlugin_Version=1.0.0",
+					"JucePlugin_VersionCode=0x10000",
+					"JucePlugin_VersionString=\\\"1.0.0\\\"",
+					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
+					"JucePlugin_VSTCategory=kPlugCategEffect",
+					"JucePlugin_LV2PluginClass=Plugin",
+					"JucePlugin_Vst3Category=\\\"Fx\\\"",
+					"JucePlugin_AUMainType=\\'aufx\\'",
+					"JucePlugin_AUSubType=JucePlugin_PluginCode",
+					"JucePlugin_AUExportPrefix=LinzReverbsAU",
+					"JucePlugin_AUExportPrefixQuoted=\\\"LinzReverbsAU\\\"",
+					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_CFBundleIdentifier=com.yourcompany.LinzReverbs",
+					"JucePlugin_AAXIdentifier=com.yourcompany.LinzReverbs",
+					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
+					"JucePlugin_AAXCategory=0",
+					"JucePlugin_AAXDisableBypass=0",
+					"JucePlugin_AAXDisableMultiMono=0",
+					"JucePlugin_IAAType=0x61757278",
+					"JucePlugin_IAASubType=JucePlugin_PluginCode",
+					"JucePlugin_IAAName=\\\"yourcompany:\\ LinzReverbs\\\"",
+					"JucePlugin_VSTNumMidiInputs=16",
+					"JucePlugin_VSTNumMidiOutputs=16",
+					"JucePlugin_ARAContentTypes=0",
+					"JucePlugin_ARATransformationFlags=0",
+					"JucePlugin_ARAFactoryID=\\\"com.yourcompany.LinzReverbs.factory\\\"",
+					"JucePlugin_ARADocumentArchiveID=\\\"com.yourcompany.LinzReverbs.aradocumentarchive.1.0.0\\\"",
+					"JucePlugin_ARACompatibleArchiveIDs=\\\"\\\"",
+					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
+					"JUCER_XCODE_MAC_F6D2F4CF=1",
+					"JUCE_APP_VERSION=1.0.0",
+					"JUCE_APP_VERSION_HEX=0x10000",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(HOME)/JUCE/modules/juce_audio_processors_headless/format_types/VST3_SDK",
+					"$(SRCROOT)/../../JuceLibraryCode",
+					"$(HOME)/JUCE/modules",
+					"$(HOME)/JUCE/modules/juce_audio_plugin_client/AU",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Info-AU.plist";
+				INFOPLIST_PREPROCESS = NO;
+				INSTALL_PATH = "$(HOME)/Library/Audio/Plug-Ins/Components";
+				LIBRARY_STYLE = Bundle;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				MTL_HEADER_SEARCH_PATHS = "$(HOME)/JUCE/modules/juce_audio_processors_headless/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode $(HOME)/JUCE/modules $(HOME)/JUCE/modules/juce_audio_plugin_client/AU";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-bundle",
+					"-lLinzReverbs",
+				);
+				OTHER_REZFLAGS = "-d ppc_$ppc -d i386_$i386 -d ppc64_$ppc64 -d x86_64_$x86_64 -d arm64_$arm64 -I /System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Versions/A/Headers -I \"$(DEVELOPER_DIR)/Extras/CoreAudio/AudioUnits/AUPublic/AUBase\" -I \"$(DEVELOPER_DIR)/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/AudioUnit.framework/Headers\"";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.LinzReverbs;
+				PRODUCT_NAME = LinzReverbs;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
+				WRAPPER_EXTENSION = component;
+			};
+			name = Debug;
+		};
+		42A8944777C9207CA98ADC6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4C18F2A96D8CB254CB4C2BE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
+				DEAD_CODE_STRIPPING = YES;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				EXCLUDED_ARCHS = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_NDEBUG=1",
+					"NDEBUG=1",
+					"JUCE_PROJUCER_VERSION=0x90004",
+					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_processors=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_processors_headless=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_utils=1",
+					"JUCE_MODULE_AVAILABLE_juce_core=1",
+					"JUCE_MODULE_AVAILABLE_juce_data_structures=1",
+					"JUCE_MODULE_AVAILABLE_juce_dsp=1",
+					"JUCE_MODULE_AVAILABLE_juce_events=1",
+					"JUCE_MODULE_AVAILABLE_juce_graphics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_extra=1",
+					"JUCE_MODULE_AVAILABLE_juce_osc=1",
+					"JUCE_WEBVIEW_INTEROP_LIBRARY_VERSION=\\\"1.0.0\\\"",
+					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+					"JUCE_VST3_CAN_REPLACE_VST2=0",
+					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
+					"JucePlugin_Build_VST=0",
+					"JucePlugin_Build_VST3=0",
+					"JucePlugin_Build_AU=1",
+					"JucePlugin_Build_AUv3=0",
+					"JucePlugin_Build_AAX=0",
+					"JucePlugin_Build_Standalone=0",
+					"JucePlugin_Build_Unity=0",
+					"JucePlugin_Build_LV2=0",
+					"JucePlugin_Enable_IAA=0",
+					"JucePlugin_Enable_ARA=0",
+					"JucePlugin_Name=\\\"LinzReverbs\\\"",
+					"JucePlugin_Desc=\\\"LinzReverbs\\\"",
+					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"www.yourcompany.com\\\"",
+					"JucePlugin_ManufacturerEmail=\\\"\\\"",
+					"JucePlugin_ManufacturerCode=0x4d616e75",
+					"JucePlugin_PluginCode=0x4a7a6931",
+					"JucePlugin_IsSynth=0",
+					"JucePlugin_WantsMidiInput=0",
+					"JucePlugin_ProducesMidiOutput=0",
+					"JucePlugin_IsMidiEffect=0",
+					"JucePlugin_EditorRequiresKeyboardFocus=0",
+					"JucePlugin_Version=1.0.0",
+					"JucePlugin_VersionCode=0x10000",
+					"JucePlugin_VersionString=\\\"1.0.0\\\"",
+					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
+					"JucePlugin_VSTCategory=kPlugCategEffect",
+					"JucePlugin_LV2PluginClass=Plugin",
+					"JucePlugin_Vst3Category=\\\"Fx\\\"",
+					"JucePlugin_AUMainType=\\'aufx\\'",
+					"JucePlugin_AUSubType=JucePlugin_PluginCode",
+					"JucePlugin_AUExportPrefix=LinzReverbsAU",
+					"JucePlugin_AUExportPrefixQuoted=\\\"LinzReverbsAU\\\"",
+					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_CFBundleIdentifier=com.yourcompany.LinzReverbs",
+					"JucePlugin_AAXIdentifier=com.yourcompany.LinzReverbs",
+					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
+					"JucePlugin_AAXCategory=0",
+					"JucePlugin_AAXDisableBypass=0",
+					"JucePlugin_AAXDisableMultiMono=0",
+					"JucePlugin_IAAType=0x61757278",
+					"JucePlugin_IAASubType=JucePlugin_PluginCode",
+					"JucePlugin_IAAName=\\\"yourcompany:\\ LinzReverbs\\\"",
+					"JucePlugin_VSTNumMidiInputs=16",
+					"JucePlugin_VSTNumMidiOutputs=16",
+					"JucePlugin_ARAContentTypes=0",
+					"JucePlugin_ARATransformationFlags=0",
+					"JucePlugin_ARAFactoryID=\\\"com.yourcompany.LinzReverbs.factory\\\"",
+					"JucePlugin_ARADocumentArchiveID=\\\"com.yourcompany.LinzReverbs.aradocumentarchive.1.0.0\\\"",
+					"JucePlugin_ARACompatibleArchiveIDs=\\\"\\\"",
+					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
+					"JUCER_XCODE_MAC_F6D2F4CF=1",
+					"JUCE_APP_VERSION=1.0.0",
+					"JUCE_APP_VERSION_HEX=0x10000",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(HOME)/JUCE/modules/juce_audio_processors_headless/format_types/VST3_SDK",
+					"$(SRCROOT)/../../JuceLibraryCode",
+					"$(HOME)/JUCE/modules",
+					"$(HOME)/JUCE/modules/juce_audio_plugin_client/AU",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Info-AU.plist";
+				INFOPLIST_PREPROCESS = NO;
+				INSTALL_PATH = "$(HOME)/Library/Audio/Plug-Ins/Components";
+				LIBRARY_STYLE = Bundle;
+				LLVM_LTO = YES;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				MTL_HEADER_SEARCH_PATHS = "$(HOME)/JUCE/modules/juce_audio_processors_headless/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode $(HOME)/JUCE/modules $(HOME)/JUCE/modules/juce_audio_plugin_client/AU";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-bundle",
+					"-lLinzReverbs",
+				);
+				OTHER_REZFLAGS = "-d ppc_$ppc -d i386_$i386 -d ppc64_$ppc64 -d x86_64_$x86_64 -d arm64_$arm64 -I /System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Versions/A/Headers -I \"$(DEVELOPER_DIR)/Extras/CoreAudio/AudioUnits/AUPublic/AUBase\" -I \"$(DEVELOPER_DIR)/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/AudioUnit.framework/Headers\"";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.LinzReverbs;
+				PRODUCT_NAME = LinzReverbs;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
+				WRAPPER_EXTENSION = component;
+			};
+			name = Release;
+		};
+		4DB28C2B1FAEA46114035DB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
+				DEAD_CODE_STRIPPING = YES;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				EXCLUDED_ARCHS = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_NDEBUG=1",
+					"NDEBUG=1",
+					"JUCE_PROJUCER_VERSION=0x90004",
+					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_processors=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_processors_headless=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_utils=1",
+					"JUCE_MODULE_AVAILABLE_juce_core=1",
+					"JUCE_MODULE_AVAILABLE_juce_data_structures=1",
+					"JUCE_MODULE_AVAILABLE_juce_dsp=1",
+					"JUCE_MODULE_AVAILABLE_juce_events=1",
+					"JUCE_MODULE_AVAILABLE_juce_graphics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_extra=1",
+					"JUCE_MODULE_AVAILABLE_juce_osc=1",
+					"JUCE_WEBVIEW_INTEROP_LIBRARY_VERSION=\\\"1.0.0\\\"",
+					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+					"JUCE_VST3_CAN_REPLACE_VST2=0",
+					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
+					"JucePlugin_Build_VST=0",
+					"JucePlugin_Build_VST3=1",
+					"JucePlugin_Build_AU=1",
+					"JucePlugin_Build_AUv3=0",
+					"JucePlugin_Build_AAX=0",
+					"JucePlugin_Build_Standalone=1",
+					"JucePlugin_Build_Unity=0",
+					"JucePlugin_Build_LV2=0",
+					"JucePlugin_Enable_IAA=0",
+					"JucePlugin_Enable_ARA=0",
+					"JucePlugin_Name=\\\"LinzReverbs\\\"",
+					"JucePlugin_Desc=\\\"LinzReverbs\\\"",
+					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"www.yourcompany.com\\\"",
+					"JucePlugin_ManufacturerEmail=\\\"\\\"",
+					"JucePlugin_ManufacturerCode=0x4d616e75",
+					"JucePlugin_PluginCode=0x4a7a6931",
+					"JucePlugin_IsSynth=0",
+					"JucePlugin_WantsMidiInput=0",
+					"JucePlugin_ProducesMidiOutput=0",
+					"JucePlugin_IsMidiEffect=0",
+					"JucePlugin_EditorRequiresKeyboardFocus=0",
+					"JucePlugin_Version=1.0.0",
+					"JucePlugin_VersionCode=0x10000",
+					"JucePlugin_VersionString=\\\"1.0.0\\\"",
+					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
+					"JucePlugin_VSTCategory=kPlugCategEffect",
+					"JucePlugin_LV2PluginClass=Plugin",
+					"JucePlugin_Vst3Category=\\\"Fx\\\"",
+					"JucePlugin_AUMainType=\\'aufx\\'",
+					"JucePlugin_AUSubType=JucePlugin_PluginCode",
+					"JucePlugin_AUExportPrefix=LinzReverbsAU",
+					"JucePlugin_AUExportPrefixQuoted=\\\"LinzReverbsAU\\\"",
+					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_CFBundleIdentifier=com.yourcompany.LinzReverbs",
+					"JucePlugin_AAXIdentifier=com.yourcompany.LinzReverbs",
+					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
+					"JucePlugin_AAXCategory=0",
+					"JucePlugin_AAXDisableBypass=0",
+					"JucePlugin_AAXDisableMultiMono=0",
+					"JucePlugin_IAAType=0x61757278",
+					"JucePlugin_IAASubType=JucePlugin_PluginCode",
+					"JucePlugin_IAAName=\\\"yourcompany:\\ LinzReverbs\\\"",
+					"JucePlugin_VSTNumMidiInputs=16",
+					"JucePlugin_VSTNumMidiOutputs=16",
+					"JucePlugin_ARAContentTypes=0",
+					"JucePlugin_ARATransformationFlags=0",
+					"JucePlugin_ARAFactoryID=\\\"com.yourcompany.LinzReverbs.factory\\\"",
+					"JucePlugin_ARADocumentArchiveID=\\\"com.yourcompany.LinzReverbs.aradocumentarchive.1.0.0\\\"",
+					"JucePlugin_ARACompatibleArchiveIDs=\\\"\\\"",
+					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
+					"JUCER_XCODE_MAC_F6D2F4CF=1",
+					"JUCE_APP_VERSION=1.0.0",
+					"JUCE_APP_VERSION_HEX=0x10000",
+					"JUCE_SHARED_CODE=1",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"$(HOME)/JUCE/modules/juce_audio_processors_headless/format_types/VST3_SDK",
+					"$(SRCROOT)/../../JuceLibraryCode",
+					"$(HOME)/JUCE/modules",
+					"$(HOME)/JUCE/modules/juce_audio_plugin_client/AU",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				LLVM_LTO = YES;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				MTL_HEADER_SEARCH_PATHS = "$(HOME)/JUCE/modules/juce_audio_processors_headless/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode $(HOME)/JUCE/modules $(HOME)/JUCE/modules/juce_audio_plugin_client/AU";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.LinzReverbs;
+				PRODUCT_NAME = LinzReverbs;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
+			};
+			name = Release;
+		};
+		4E07754D74785A4503C5C5EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				EXCLUDED_ARCHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_DEBUG=1",
+					"DEBUG=1",
+					"JUCE_PROJUCER_VERSION=0x90004",
+					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_processors=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_processors_headless=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_utils=1",
+					"JUCE_MODULE_AVAILABLE_juce_core=1",
+					"JUCE_MODULE_AVAILABLE_juce_data_structures=1",
+					"JUCE_MODULE_AVAILABLE_juce_dsp=1",
+					"JUCE_MODULE_AVAILABLE_juce_events=1",
+					"JUCE_MODULE_AVAILABLE_juce_graphics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_extra=1",
+					"JUCE_MODULE_AVAILABLE_juce_osc=1",
+					"JUCE_WEBVIEW_INTEROP_LIBRARY_VERSION=\\\"1.0.0\\\"",
+					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+					"JUCE_VST3_CAN_REPLACE_VST2=0",
+					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
+					"JucePlugin_Build_VST=0",
+					"JucePlugin_Build_VST3=0",
+					"JucePlugin_Build_AU=0",
+					"JucePlugin_Build_AUv3=0",
+					"JucePlugin_Build_AAX=0",
+					"JucePlugin_Build_Standalone=0",
+					"JucePlugin_Build_Unity=0",
+					"JucePlugin_Build_LV2=0",
+					"JucePlugin_Enable_IAA=0",
+					"JucePlugin_Enable_ARA=0",
+					"JucePlugin_Name=\\\"LinzReverbs\\\"",
+					"JucePlugin_Desc=\\\"LinzReverbs\\\"",
+					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"www.yourcompany.com\\\"",
+					"JucePlugin_ManufacturerEmail=\\\"\\\"",
+					"JucePlugin_ManufacturerCode=0x4d616e75",
+					"JucePlugin_PluginCode=0x4a7a6931",
+					"JucePlugin_IsSynth=0",
+					"JucePlugin_WantsMidiInput=0",
+					"JucePlugin_ProducesMidiOutput=0",
+					"JucePlugin_IsMidiEffect=0",
+					"JucePlugin_EditorRequiresKeyboardFocus=0",
+					"JucePlugin_Version=1.0.0",
+					"JucePlugin_VersionCode=0x10000",
+					"JucePlugin_VersionString=\\\"1.0.0\\\"",
+					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
+					"JucePlugin_VSTCategory=kPlugCategEffect",
+					"JucePlugin_LV2PluginClass=Plugin",
+					"JucePlugin_Vst3Category=\\\"Fx\\\"",
+					"JucePlugin_AUMainType=\\'aufx\\'",
+					"JucePlugin_AUSubType=JucePlugin_PluginCode",
+					"JucePlugin_AUExportPrefix=LinzReverbsAU",
+					"JucePlugin_AUExportPrefixQuoted=\\\"LinzReverbsAU\\\"",
+					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_CFBundleIdentifier=com.yourcompany.LinzReverbs",
+					"JucePlugin_AAXIdentifier=com.yourcompany.LinzReverbs",
+					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
+					"JucePlugin_AAXCategory=0",
+					"JucePlugin_AAXDisableBypass=0",
+					"JucePlugin_AAXDisableMultiMono=0",
+					"JucePlugin_IAAType=0x61757278",
+					"JucePlugin_IAASubType=JucePlugin_PluginCode",
+					"JucePlugin_IAAName=\\\"yourcompany:\\ LinzReverbs\\\"",
+					"JucePlugin_VSTNumMidiInputs=16",
+					"JucePlugin_VSTNumMidiOutputs=16",
+					"JucePlugin_ARAContentTypes=0",
+					"JucePlugin_ARATransformationFlags=0",
+					"JucePlugin_ARAFactoryID=\\\"com.yourcompany.LinzReverbs.factory\\\"",
+					"JucePlugin_ARADocumentArchiveID=\\\"com.yourcompany.LinzReverbs.aradocumentarchive.1.0.0\\\"",
+					"JucePlugin_ARACompatibleArchiveIDs=\\\"\\\"",
+					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
+					"JUCER_XCODE_MAC_F6D2F4CF=1",
+					"JUCE_APP_VERSION=1.0.0",
+					"JUCE_APP_VERSION_HEX=0x10000",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"$(HOME)/JUCE/modules/juce_audio_processors_headless/format_types/VST3_SDK",
+					"$(SRCROOT)/../../JuceLibraryCode",
+					"$(HOME)/JUCE/modules",
+					"$(HOME)/JUCE/modules/juce_audio_plugin_client/AU",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Info-VST3_Manifest_Helper.plist";
+				INFOPLIST_PREPROCESS = NO;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				MTL_HEADER_SEARCH_PATHS = "$(HOME)/JUCE/modules/juce_audio_processors_headless/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode $(HOME)/JUCE/modules $(HOME)/JUCE/modules/juce_audio_plugin_client/AU";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_CODE_SIGN_FLAGS = "";
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.LinzReverbs;
+				PRODUCT_NAME = juce_vst3_helper;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
+			};
+			name = Debug;
+		};
+		7CB08783A88395B9D75BDFCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				EXCLUDED_ARCHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_DEBUG=1",
+					"DEBUG=1",
+					"JUCE_PROJUCER_VERSION=0x90004",
+					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_processors=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_processors_headless=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_utils=1",
+					"JUCE_MODULE_AVAILABLE_juce_core=1",
+					"JUCE_MODULE_AVAILABLE_juce_data_structures=1",
+					"JUCE_MODULE_AVAILABLE_juce_dsp=1",
+					"JUCE_MODULE_AVAILABLE_juce_events=1",
+					"JUCE_MODULE_AVAILABLE_juce_graphics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_extra=1",
+					"JUCE_MODULE_AVAILABLE_juce_osc=1",
+					"JUCE_WEBVIEW_INTEROP_LIBRARY_VERSION=\\\"1.0.0\\\"",
+					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+					"JUCE_VST3_CAN_REPLACE_VST2=0",
+					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
+					"JucePlugin_Build_VST=0",
+					"JucePlugin_Build_VST3=1",
+					"JucePlugin_Build_AU=0",
+					"JucePlugin_Build_AUv3=0",
+					"JucePlugin_Build_AAX=0",
+					"JucePlugin_Build_Standalone=0",
+					"JucePlugin_Build_Unity=0",
+					"JucePlugin_Build_LV2=0",
+					"JucePlugin_Enable_IAA=0",
+					"JucePlugin_Enable_ARA=0",
+					"JucePlugin_Name=\\\"LinzReverbs\\\"",
+					"JucePlugin_Desc=\\\"LinzReverbs\\\"",
+					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"www.yourcompany.com\\\"",
+					"JucePlugin_ManufacturerEmail=\\\"\\\"",
+					"JucePlugin_ManufacturerCode=0x4d616e75",
+					"JucePlugin_PluginCode=0x4a7a6931",
+					"JucePlugin_IsSynth=0",
+					"JucePlugin_WantsMidiInput=0",
+					"JucePlugin_ProducesMidiOutput=0",
+					"JucePlugin_IsMidiEffect=0",
+					"JucePlugin_EditorRequiresKeyboardFocus=0",
+					"JucePlugin_Version=1.0.0",
+					"JucePlugin_VersionCode=0x10000",
+					"JucePlugin_VersionString=\\\"1.0.0\\\"",
+					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
+					"JucePlugin_VSTCategory=kPlugCategEffect",
+					"JucePlugin_LV2PluginClass=Plugin",
+					"JucePlugin_Vst3Category=\\\"Fx\\\"",
+					"JucePlugin_AUMainType=\\'aufx\\'",
+					"JucePlugin_AUSubType=JucePlugin_PluginCode",
+					"JucePlugin_AUExportPrefix=LinzReverbsAU",
+					"JucePlugin_AUExportPrefixQuoted=\\\"LinzReverbsAU\\\"",
+					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_CFBundleIdentifier=com.yourcompany.LinzReverbs",
+					"JucePlugin_AAXIdentifier=com.yourcompany.LinzReverbs",
+					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
+					"JucePlugin_AAXCategory=0",
+					"JucePlugin_AAXDisableBypass=0",
+					"JucePlugin_AAXDisableMultiMono=0",
+					"JucePlugin_IAAType=0x61757278",
+					"JucePlugin_IAASubType=JucePlugin_PluginCode",
+					"JucePlugin_IAAName=\\\"yourcompany:\\ LinzReverbs\\\"",
+					"JucePlugin_VSTNumMidiInputs=16",
+					"JucePlugin_VSTNumMidiOutputs=16",
+					"JucePlugin_ARAContentTypes=0",
+					"JucePlugin_ARATransformationFlags=0",
+					"JucePlugin_ARAFactoryID=\\\"com.yourcompany.LinzReverbs.factory\\\"",
+					"JucePlugin_ARADocumentArchiveID=\\\"com.yourcompany.LinzReverbs.aradocumentarchive.1.0.0\\\"",
+					"JucePlugin_ARACompatibleArchiveIDs=\\\"\\\"",
+					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
+					"JUCER_XCODE_MAC_F6D2F4CF=1",
+					"JUCE_APP_VERSION=1.0.0",
+					"JUCE_APP_VERSION_HEX=0x10000",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(HOME)/JUCE/modules/juce_audio_processors_headless/format_types/VST3_SDK",
+					"$(SRCROOT)/../../JuceLibraryCode",
+					"$(HOME)/JUCE/modules",
+					"$(HOME)/JUCE/modules/juce_audio_plugin_client/AU",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Info-VST3.plist";
+				INFOPLIST_PREPROCESS = NO;
+				INSTALL_PATH = "$(HOME)/Library/Audio/Plug-Ins/VST3";
+				LIBRARY_STYLE = Bundle;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				MTL_HEADER_SEARCH_PATHS = "$(HOME)/JUCE/modules/juce_audio_processors_headless/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode $(HOME)/JUCE/modules $(HOME)/JUCE/modules/juce_audio_plugin_client/AU";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-bundle",
+					"-lLinzReverbs",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.LinzReverbs;
+				PRODUCT_NAME = LinzReverbs;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
+				WRAPPER_EXTENSION = vst3;
+			};
+			name = Debug;
+		};
+		8B9F0A63FD986ABAD5CE7FDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
+				DEAD_CODE_STRIPPING = YES;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				EXCLUDED_ARCHS = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_NDEBUG=1",
+					"NDEBUG=1",
+					"JUCE_PROJUCER_VERSION=0x90004",
+					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_processors=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_processors_headless=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_utils=1",
+					"JUCE_MODULE_AVAILABLE_juce_core=1",
+					"JUCE_MODULE_AVAILABLE_juce_data_structures=1",
+					"JUCE_MODULE_AVAILABLE_juce_dsp=1",
+					"JUCE_MODULE_AVAILABLE_juce_events=1",
+					"JUCE_MODULE_AVAILABLE_juce_graphics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_extra=1",
+					"JUCE_MODULE_AVAILABLE_juce_osc=1",
+					"JUCE_WEBVIEW_INTEROP_LIBRARY_VERSION=\\\"1.0.0\\\"",
+					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+					"JUCE_VST3_CAN_REPLACE_VST2=0",
+					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
+					"JucePlugin_Build_VST=0",
+					"JucePlugin_Build_VST3=0",
+					"JucePlugin_Build_AU=0",
+					"JucePlugin_Build_AUv3=0",
+					"JucePlugin_Build_AAX=0",
+					"JucePlugin_Build_Standalone=1",
+					"JucePlugin_Build_Unity=0",
+					"JucePlugin_Build_LV2=0",
+					"JucePlugin_Enable_IAA=0",
+					"JucePlugin_Enable_ARA=0",
+					"JucePlugin_Name=\\\"LinzReverbs\\\"",
+					"JucePlugin_Desc=\\\"LinzReverbs\\\"",
+					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"www.yourcompany.com\\\"",
+					"JucePlugin_ManufacturerEmail=\\\"\\\"",
+					"JucePlugin_ManufacturerCode=0x4d616e75",
+					"JucePlugin_PluginCode=0x4a7a6931",
+					"JucePlugin_IsSynth=0",
+					"JucePlugin_WantsMidiInput=0",
+					"JucePlugin_ProducesMidiOutput=0",
+					"JucePlugin_IsMidiEffect=0",
+					"JucePlugin_EditorRequiresKeyboardFocus=0",
+					"JucePlugin_Version=1.0.0",
+					"JucePlugin_VersionCode=0x10000",
+					"JucePlugin_VersionString=\\\"1.0.0\\\"",
+					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
+					"JucePlugin_VSTCategory=kPlugCategEffect",
+					"JucePlugin_LV2PluginClass=Plugin",
+					"JucePlugin_Vst3Category=\\\"Fx\\\"",
+					"JucePlugin_AUMainType=\\'aufx\\'",
+					"JucePlugin_AUSubType=JucePlugin_PluginCode",
+					"JucePlugin_AUExportPrefix=LinzReverbsAU",
+					"JucePlugin_AUExportPrefixQuoted=\\\"LinzReverbsAU\\\"",
+					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_CFBundleIdentifier=com.yourcompany.LinzReverbs",
+					"JucePlugin_AAXIdentifier=com.yourcompany.LinzReverbs",
+					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
+					"JucePlugin_AAXCategory=0",
+					"JucePlugin_AAXDisableBypass=0",
+					"JucePlugin_AAXDisableMultiMono=0",
+					"JucePlugin_IAAType=0x61757278",
+					"JucePlugin_IAASubType=JucePlugin_PluginCode",
+					"JucePlugin_IAAName=\\\"yourcompany:\\ LinzReverbs\\\"",
+					"JucePlugin_VSTNumMidiInputs=16",
+					"JucePlugin_VSTNumMidiOutputs=16",
+					"JucePlugin_ARAContentTypes=0",
+					"JucePlugin_ARATransformationFlags=0",
+					"JucePlugin_ARAFactoryID=\\\"com.yourcompany.LinzReverbs.factory\\\"",
+					"JucePlugin_ARADocumentArchiveID=\\\"com.yourcompany.LinzReverbs.aradocumentarchive.1.0.0\\\"",
+					"JucePlugin_ARACompatibleArchiveIDs=\\\"\\\"",
+					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
+					"JUCER_XCODE_MAC_F6D2F4CF=1",
+					"JUCE_APP_VERSION=1.0.0",
+					"JUCE_APP_VERSION_HEX=0x10000",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"$(HOME)/JUCE/modules/juce_audio_processors_headless/format_types/VST3_SDK",
+					"$(SRCROOT)/../../JuceLibraryCode",
+					"$(HOME)/JUCE/modules",
+					"$(HOME)/JUCE/modules/juce_audio_plugin_client/AU",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Info-Standalone_Plugin.plist";
+				INFOPLIST_PREPROCESS = NO;
+				LLVM_LTO = YES;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				MTL_HEADER_SEARCH_PATHS = "$(HOME)/JUCE/modules/juce_audio_processors_headless/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode $(HOME)/JUCE/modules $(HOME)/JUCE/modules/juce_audio_plugin_client/AU";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-lLinzReverbs",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.LinzReverbs;
+				PRODUCT_NAME = LinzReverbs;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
+			};
+			name = Release;
+		};
+		D764E0BF4EA727F2278151C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				EXCLUDED_ARCHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_DEBUG=1",
+					"DEBUG=1",
+					"JUCE_PROJUCER_VERSION=0x90004",
+					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_processors=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_processors_headless=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_utils=1",
+					"JUCE_MODULE_AVAILABLE_juce_core=1",
+					"JUCE_MODULE_AVAILABLE_juce_data_structures=1",
+					"JUCE_MODULE_AVAILABLE_juce_dsp=1",
+					"JUCE_MODULE_AVAILABLE_juce_events=1",
+					"JUCE_MODULE_AVAILABLE_juce_graphics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_extra=1",
+					"JUCE_MODULE_AVAILABLE_juce_osc=1",
+					"JUCE_WEBVIEW_INTEROP_LIBRARY_VERSION=\\\"1.0.0\\\"",
+					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+					"JUCE_VST3_CAN_REPLACE_VST2=0",
+					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
+					"JucePlugin_Build_VST=0",
+					"JucePlugin_Build_VST3=0",
+					"JucePlugin_Build_AU=0",
+					"JucePlugin_Build_AUv3=0",
+					"JucePlugin_Build_AAX=0",
+					"JucePlugin_Build_Standalone=1",
+					"JucePlugin_Build_Unity=0",
+					"JucePlugin_Build_LV2=0",
+					"JucePlugin_Enable_IAA=0",
+					"JucePlugin_Enable_ARA=0",
+					"JucePlugin_Name=\\\"LinzReverbs\\\"",
+					"JucePlugin_Desc=\\\"LinzReverbs\\\"",
+					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"www.yourcompany.com\\\"",
+					"JucePlugin_ManufacturerEmail=\\\"\\\"",
+					"JucePlugin_ManufacturerCode=0x4d616e75",
+					"JucePlugin_PluginCode=0x4a7a6931",
+					"JucePlugin_IsSynth=0",
+					"JucePlugin_WantsMidiInput=0",
+					"JucePlugin_ProducesMidiOutput=0",
+					"JucePlugin_IsMidiEffect=0",
+					"JucePlugin_EditorRequiresKeyboardFocus=0",
+					"JucePlugin_Version=1.0.0",
+					"JucePlugin_VersionCode=0x10000",
+					"JucePlugin_VersionString=\\\"1.0.0\\\"",
+					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
+					"JucePlugin_VSTCategory=kPlugCategEffect",
+					"JucePlugin_LV2PluginClass=Plugin",
+					"JucePlugin_Vst3Category=\\\"Fx\\\"",
+					"JucePlugin_AUMainType=\\'aufx\\'",
+					"JucePlugin_AUSubType=JucePlugin_PluginCode",
+					"JucePlugin_AUExportPrefix=LinzReverbsAU",
+					"JucePlugin_AUExportPrefixQuoted=\\\"LinzReverbsAU\\\"",
+					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_CFBundleIdentifier=com.yourcompany.LinzReverbs",
+					"JucePlugin_AAXIdentifier=com.yourcompany.LinzReverbs",
+					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
+					"JucePlugin_AAXCategory=0",
+					"JucePlugin_AAXDisableBypass=0",
+					"JucePlugin_AAXDisableMultiMono=0",
+					"JucePlugin_IAAType=0x61757278",
+					"JucePlugin_IAASubType=JucePlugin_PluginCode",
+					"JucePlugin_IAAName=\\\"yourcompany:\\ LinzReverbs\\\"",
+					"JucePlugin_VSTNumMidiInputs=16",
+					"JucePlugin_VSTNumMidiOutputs=16",
+					"JucePlugin_ARAContentTypes=0",
+					"JucePlugin_ARATransformationFlags=0",
+					"JucePlugin_ARAFactoryID=\\\"com.yourcompany.LinzReverbs.factory\\\"",
+					"JucePlugin_ARADocumentArchiveID=\\\"com.yourcompany.LinzReverbs.aradocumentarchive.1.0.0\\\"",
+					"JucePlugin_ARACompatibleArchiveIDs=\\\"\\\"",
+					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
+					"JUCER_XCODE_MAC_F6D2F4CF=1",
+					"JUCE_APP_VERSION=1.0.0",
+					"JUCE_APP_VERSION_HEX=0x10000",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"$(HOME)/JUCE/modules/juce_audio_processors_headless/format_types/VST3_SDK",
+					"$(SRCROOT)/../../JuceLibraryCode",
+					"$(HOME)/JUCE/modules",
+					"$(HOME)/JUCE/modules/juce_audio_plugin_client/AU",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Info-Standalone_Plugin.plist";
+				INFOPLIST_PREPROCESS = NO;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				MTL_HEADER_SEARCH_PATHS = "$(HOME)/JUCE/modules/juce_audio_processors_headless/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode $(HOME)/JUCE/modules $(HOME)/JUCE/modules/juce_audio_plugin_client/AU";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-lLinzReverbs",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.LinzReverbs;
+				PRODUCT_NAME = LinzReverbs;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
+			};
+			name = Debug;
+		};
+		E6D0917C3947545187A65415 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F74F3DDF13436932ADFD6219 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				EXCLUDED_ARCHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_DEBUG=1",
+					"DEBUG=1",
+					"JUCE_PROJUCER_VERSION=0x90004",
+					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_processors=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_processors_headless=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_utils=1",
+					"JUCE_MODULE_AVAILABLE_juce_core=1",
+					"JUCE_MODULE_AVAILABLE_juce_data_structures=1",
+					"JUCE_MODULE_AVAILABLE_juce_dsp=1",
+					"JUCE_MODULE_AVAILABLE_juce_events=1",
+					"JUCE_MODULE_AVAILABLE_juce_graphics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_extra=1",
+					"JUCE_MODULE_AVAILABLE_juce_osc=1",
+					"JUCE_WEBVIEW_INTEROP_LIBRARY_VERSION=\\\"1.0.0\\\"",
+					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+					"JUCE_VST3_CAN_REPLACE_VST2=0",
+					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
+					"JucePlugin_Build_VST=0",
+					"JucePlugin_Build_VST3=1",
+					"JucePlugin_Build_AU=1",
+					"JucePlugin_Build_AUv3=0",
+					"JucePlugin_Build_AAX=0",
+					"JucePlugin_Build_Standalone=1",
+					"JucePlugin_Build_Unity=0",
+					"JucePlugin_Build_LV2=0",
+					"JucePlugin_Enable_IAA=0",
+					"JucePlugin_Enable_ARA=0",
+					"JucePlugin_Name=\\\"LinzReverbs\\\"",
+					"JucePlugin_Desc=\\\"LinzReverbs\\\"",
+					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"www.yourcompany.com\\\"",
+					"JucePlugin_ManufacturerEmail=\\\"\\\"",
+					"JucePlugin_ManufacturerCode=0x4d616e75",
+					"JucePlugin_PluginCode=0x4a7a6931",
+					"JucePlugin_IsSynth=0",
+					"JucePlugin_WantsMidiInput=0",
+					"JucePlugin_ProducesMidiOutput=0",
+					"JucePlugin_IsMidiEffect=0",
+					"JucePlugin_EditorRequiresKeyboardFocus=0",
+					"JucePlugin_Version=1.0.0",
+					"JucePlugin_VersionCode=0x10000",
+					"JucePlugin_VersionString=\\\"1.0.0\\\"",
+					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
+					"JucePlugin_VSTCategory=kPlugCategEffect",
+					"JucePlugin_LV2PluginClass=Plugin",
+					"JucePlugin_Vst3Category=\\\"Fx\\\"",
+					"JucePlugin_AUMainType=\\'aufx\\'",
+					"JucePlugin_AUSubType=JucePlugin_PluginCode",
+					"JucePlugin_AUExportPrefix=LinzReverbsAU",
+					"JucePlugin_AUExportPrefixQuoted=\\\"LinzReverbsAU\\\"",
+					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_CFBundleIdentifier=com.yourcompany.LinzReverbs",
+					"JucePlugin_AAXIdentifier=com.yourcompany.LinzReverbs",
+					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
+					"JucePlugin_AAXCategory=0",
+					"JucePlugin_AAXDisableBypass=0",
+					"JucePlugin_AAXDisableMultiMono=0",
+					"JucePlugin_IAAType=0x61757278",
+					"JucePlugin_IAASubType=JucePlugin_PluginCode",
+					"JucePlugin_IAAName=\\\"yourcompany:\\ LinzReverbs\\\"",
+					"JucePlugin_VSTNumMidiInputs=16",
+					"JucePlugin_VSTNumMidiOutputs=16",
+					"JucePlugin_ARAContentTypes=0",
+					"JucePlugin_ARATransformationFlags=0",
+					"JucePlugin_ARAFactoryID=\\\"com.yourcompany.LinzReverbs.factory\\\"",
+					"JucePlugin_ARADocumentArchiveID=\\\"com.yourcompany.LinzReverbs.aradocumentarchive.1.0.0\\\"",
+					"JucePlugin_ARACompatibleArchiveIDs=\\\"\\\"",
+					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
+					"JUCER_XCODE_MAC_F6D2F4CF=1",
+					"JUCE_APP_VERSION=1.0.0",
+					"JUCE_APP_VERSION_HEX=0x10000",
+					"JUCE_SHARED_CODE=1",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"$(HOME)/JUCE/modules/juce_audio_processors_headless/format_types/VST3_SDK",
+					"$(SRCROOT)/../../JuceLibraryCode",
+					"$(HOME)/JUCE/modules",
+					"$(HOME)/JUCE/modules/juce_audio_plugin_client/AU",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				MTL_HEADER_SEARCH_PATHS = "$(HOME)/JUCE/modules/juce_audio_processors_headless/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode $(HOME)/JUCE/modules $(HOME)/JUCE/modules/juce_audio_plugin_client/AU";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.LinzReverbs;
+				PRODUCT_NAME = LinzReverbs;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A8C821BB9B878EC248709FD /* Build configuration list for PBXNativeTarget "LinzReverbs - Standalone Plugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D764E0BF4EA727F2278151C3 /* Debug */,
+				8B9F0A63FD986ABAD5CE7FDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5A156DA434467DE82D2D938A /* Build configuration list for PBXNativeTarget "LinzReverbs - Shared Code" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F74F3DDF13436932ADFD6219 /* Debug */,
+				4DB28C2B1FAEA46114035DB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		64BF856F5C2840FFE0AE2254 /* Build configuration list for PBXProject "LinzReverbs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B543138A8D0077D94A6B8E7 /* Release */,
+				28179FDE90315A3594539B7B /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		71EC06E525F27E57ECD76005 /* Build configuration list for PBXNativeTarget "LinzReverbs - VST3 Manifest Helper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E07754D74785A4503C5C5EE /* Debug */,
+				1C1D0F30F968AC9825B6A285 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7CE24ADF0026556F22A57322 /* Build configuration list for PBXAggregateTarget "LinzReverbs - All" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42A8944777C9207CA98ADC6C /* Debug */,
+				E6D0917C3947545187A65415 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E196EE992F060D9D1A85796C /* Build configuration list for PBXNativeTarget "LinzReverbs - VST3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CB08783A88395B9D75BDFCA /* Debug */,
+				152028B9505AB7A344BD7C9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FF189B9536ED3F9B9C8577CA /* Build configuration list for PBXNativeTarget "LinzReverbs - AU" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B0184045A8CF47C3D0EA56F /* Debug */,
+				4C18F2A96D8CB254CB4C2BE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A917BB820936DDC38CA236FA /* Project object */;
+}
