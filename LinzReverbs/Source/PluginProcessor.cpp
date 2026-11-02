@@ -24,8 +24,16 @@ LinzReverbsAudioProcessor::LinzReverbsAudioProcessor()
 #endif
 {
     auto& osc = processorChain.template get<oscIndex>();
-    osc.initialise ([] (double x) { return std::sin (x); });
+    osc.initialise ([this] (double x) { return random.nextFloat(); });
     osc.setFrequency(440.0);
+    auto& conv = processorChain.template get<convIndex>();
+    conv.loadImpulseResponse(
+        BinaryData::JKU_Garage_Long_wav,
+        BinaryData::JKU_Garage_Long_wavSize,
+        juce::dsp::Convolution::Stereo::yes,
+        juce::dsp::Convolution::Trim::yes,
+        0
+    );
     auto& gain = processorChain.template get<gainIndex>();
     gain.setGainLinear(1);
 }
@@ -70,7 +78,7 @@ bool LinzReverbsAudioProcessor::isMidiEffect() const
 
 double LinzReverbsAudioProcessor::getTailLengthSeconds() const
 {
-    return 0.0; //TODO reverb tail length
+    return 4.0; //TODO reverb tail length
 }
 
 // presets
@@ -169,20 +177,20 @@ void LinzReverbsAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer, 
     // the samples and the outer loop is handling the channels.
     // Alternatively, you can process the samples with the channels
     // interleaved by keeping the same state.
-    for (int channel = 0; channel < totalNumInputChannels; ++channel)
+    /*for (int channel = 0; channel < totalNumInputChannels; ++channel)
     {
         auto* channelData = buffer.getWritePointer (channel);
 
         // ..do something to the data...
-    }
+    }*/
 
+    
     buffer.clear();
 
     juce::dsp::AudioBlock<float> block(buffer);
     juce::dsp::ProcessContextReplacing<float> context(block);
 
-    auto& osc = processorChain.template get<oscIndex>();
-    osc.process(context);
+    processorChain.process(context);
 }
 
 //==============================================================================

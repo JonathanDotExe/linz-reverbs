@@ -3,6 +3,10 @@
 <JUCERPROJECT id="jZi1gd" name="LinzReverbs" projectType="audioplug" useAppConfig="0"
               addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1">
   <MAINGROUP id="Y52shR" name="LinzReverbs">
+    <GROUP id="{98D81D9F-5896-3C0F-00C3-E4486CC1A837}" name="Resources">
+      <FILE id="OsHua5" name="JKU_Garage_Long.wav" compile="0" resource="1"
+            file="../../../Producing/IRs/Linz Reverbs/JKU Parkgarage/JKU_Garage_Long.wav"/>
+    </GROUP>
     <GROUP id="{C7AC4E2A-453F-BBC7-A1CA-C43F00A18DC7}" name="Source">
       <FILE id="AXy0L5" name="PluginProcessor.cpp" compile="1" resource="0"
             file="Source/PluginProcessor.cpp"/>

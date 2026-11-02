@@ -62,12 +62,15 @@ private:
     //==============================================================================
     enum {
         oscIndex,
+        convIndex,
         gainIndex
     };
     
+    juce::Random random;
     juce::dsp::ProcessorChain<
-        juce::dsp::Oscillator<double>,
-        juce::dsp::Gain<double>> processorChain;
+        juce::dsp::Oscillator<float>,
+        juce::dsp::Convolution,
+        juce::dsp::Gain<float>> processorChain;
     
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (LinzReverbsAudioProcessor)
 };
