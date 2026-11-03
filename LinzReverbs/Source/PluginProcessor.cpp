@@ -88,22 +88,22 @@ double LinzReverbsAudioProcessor::getTailLengthSeconds() const
 // presets
 int LinzReverbsAudioProcessor::getNumPrograms()
 {
-    return 1;   // NB: some hosts don't cope very well if you tell them there are 0 programs,
-                // so this should be at least 1, even if you're not really implementing programs.
+    return progManager->getNumPrograms();
 }
 
 int LinzReverbsAudioProcessor::getCurrentProgram()
 {
-    return 0;
+    return progManager->getCurrentProgram();
 }
 
 void LinzReverbsAudioProcessor::setCurrentProgram (int index)
 {
+    progManager->setCurrentProgram(index);
 }
 
 const juce::String LinzReverbsAudioProcessor::getProgramName (int index)
 {
-    return {};
+    return progManager->getProgramName(index);
 }
 
 void LinzReverbsAudioProcessor::changeProgramName (int index, const juce::String& newName)

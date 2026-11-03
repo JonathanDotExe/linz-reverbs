@@ -79,7 +79,7 @@ void ProgramManager::notifyProgramChange() {
 }
 
 const std::string ProgramManager::getProgramName (int index) {
-    const Program& prog = programs.at(currProgramIndex);
+    const Program& prog = programs.at(index);
     const ReverbLocation& loc = locations.at(prog.locationIndex);
     const ReverbIR& ir = loc.irs.at(prog.irIndex);
 
