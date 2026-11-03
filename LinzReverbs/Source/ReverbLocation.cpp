@@ -10,8 +10,8 @@
 
 #include "ReverbLocation.h"
 
-ReverbIR(const std::string name, const char* data, const size_t size)
-    : name(name), data(data), size(size)
+ReverbLocation::ReverbLocation(const std::string name, const std::vector<ReverbIR> irs)
+    : name(name), irs(irs)
 {
         
 }

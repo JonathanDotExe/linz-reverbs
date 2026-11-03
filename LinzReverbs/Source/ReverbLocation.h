@@ -12,13 +12,14 @@
 #include <string>
 #include <stdio.h>
 #include <vector>
+#include "ReverbIR.h"
 
-public class ReverbLocation {
+class ReverbLocation {
 
 public:
     const std::string name;
     const std::vector<ReverbIR> irs;
     
-    ReverbIR(const std::string name, const char* data, const size_t size);
+    ReverbLocation(const std::string name, const std::vector<ReverbIR> irs);
     
-}
+};

@@ -28,8 +28,8 @@ LinzReverbsAudioProcessor::LinzReverbsAudioProcessor()
     osc.setFrequency(440.0);
     auto& conv = processorChain.template get<convIndex>();
     conv.loadImpulseResponse(
-        BinaryData::JKU_Garage_Long_wav,
-        BinaryData::JKU_Garage_Long_wavSize,
+        BinaryData::Under_The_Bridge_Clap1_wav,
+        BinaryData::Under_The_Bridge_Clap_2_wavSize,
         juce::dsp::Convolution::Stereo::yes,
         juce::dsp::Convolution::Trim::yes,
         0

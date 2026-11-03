@@ -12,13 +12,13 @@
 #include <string>
 #include <stdio.h>
 
-public class ReverbIR {
+class ReverbIR {
 
 public:
     const std::string name;
     const char* data;
     const size_t size;
     
-    ReverbIR(const std::string name, const char* data, const size_t size)
+    ReverbIR(const std::string name, const char* data, const size_t size);
     
-}
+};
