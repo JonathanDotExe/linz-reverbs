@@ -70,8 +70,8 @@
 		5A42F1CC377D5F71BA9EC6BE /* include_juce_audio_formats_opus.c in Sources */ = {isa = PBXBuildFile; fileRef = 5E1259BC870BBC60106527CC /* include_juce_audio_formats_opus.c */; };
 		5A8EC679D4BC7C515F54A4D3 /* include_juce_graphics_libwebp_utils.c in Sources */ = {isa = PBXBuildFile; fileRef = E57846F96CF7254E76C447E1 /* include_juce_graphics_libwebp_utils.c */; };
 		5E46263F55B0C9D787C34D47 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C1051DDA382C695C628E6F8 /* AudioToolbox.framework */; };
-		5E5AF7AD3099C0FC00509829 /* RecentFilesMenuTemplate.nib in Resources */ = {isa = PBXBuildFile; fileRef = 87A0482740628FFC9003C960 /* RecentFilesMenuTemplate.nib */; };
-		5E5AF7AE3099C0FC00509829 /* RecentFilesMenuTemplate.nib in Resources */ = {isa = PBXBuildFile; fileRef = 87A0482740628FFC9003C960 /* RecentFilesMenuTemplate.nib */; };
+		5E5AF7DD309A3A2D00509829 /* RecentFilesMenuTemplate.nib in Resources */ = {isa = PBXBuildFile; fileRef = 87A0482740628FFC9003C960 /* RecentFilesMenuTemplate.nib */; };
+		5E5AF7DE309A3A2D00509829 /* RecentFilesMenuTemplate.nib in Resources */ = {isa = PBXBuildFile; fileRef = 87A0482740628FFC9003C960 /* RecentFilesMenuTemplate.nib */; };
 		5F96485555B801F6CD74ACAB /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274E970320FE0029925A0D7E /* CoreAudioKit.framework */; };
 		6451A61197F1FE4F946A2FB4 /* include_juce_gui_basics_5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66F9E3D250B770374DB8141A /* include_juce_gui_basics_5.cpp */; };
 		647716386E1330A9DE4D0DA2 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1919C14FD92D25D83DFB6423 /* IOKit.framework */; };
@@ -86,6 +86,7 @@
 		75B0696701015B56978862FB /* include_juce_audio_plugin_client_AU_2.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4B3C5EDEF71E63122BCF9F3D /* include_juce_audio_plugin_client_AU_2.mm */; };
 		7B02F5B65128C3D14CBF658C /* DiscRecording.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98F5714D979413E8CA20D91D /* DiscRecording.framework */; };
 		7B29AD2B474F3E05A3C5FB16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA9337D43855CB0829E2B922 /* Foundation.framework */; };
+		7F16939590DCCA12AC3F042F /* ProgramManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1715946087805744CE623CA0 /* ProgramManager.cpp */; };
 		7F89A1F4326D73C574B0E3E6 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F87D9ECD9196004A72AA508 /* Metal.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		80EFC077FAB3220909D55380 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20A4FE976A2E129D8E4C25C2 /* CoreAudio.framework */; };
 		820E769BA639D24226F55FD2 /* include_juce_osc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBF6D415A5DF291BA340CD69 /* include_juce_osc.cpp */; };
@@ -145,63 +146,63 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5E5AF7B03099C0FC00509829 /* PBXContainerItemProxy */ = {
+		5E5AF7E0309A3A2D00509829 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A917BB820936DDC38CA236FA /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = F72CFF95CBA98D0AF2B72D78;
 			remoteInfo = "LinzReverbs - VST3";
 		};
-		5E5AF7B13099C0FC00509829 /* PBXContainerItemProxy */ = {
+		5E5AF7E1309A3A2D00509829 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A917BB820936DDC38CA236FA /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 7B9663F8DF28C6D5CEADDEE8;
 			remoteInfo = "LinzReverbs - AU";
 		};
-		5E5AF7B23099C0FC00509829 /* PBXContainerItemProxy */ = {
+		5E5AF7E2309A3A2D00509829 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A917BB820936DDC38CA236FA /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 7DD12FE83FED42907BF6D15E;
 			remoteInfo = "LinzReverbs - Standalone Plugin";
 		};
-		5E5AF7B33099C0FC00509829 /* PBXContainerItemProxy */ = {
+		5E5AF7E3309A3A2D00509829 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A917BB820936DDC38CA236FA /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 180F73F2F6BBD80169B3DB78;
 			remoteInfo = "LinzReverbs - Shared Code";
 		};
-		5E5AF7B43099C0FC00509829 /* PBXContainerItemProxy */ = {
+		5E5AF7E4309A3A2D00509829 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A917BB820936DDC38CA236FA /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 00607DC12BCD37A86816394E;
 			remoteInfo = "LinzReverbs - VST3 Manifest Helper";
 		};
-		5E5AF7B53099C0FC00509829 /* PBXContainerItemProxy */ = {
+		5E5AF7E5309A3A2D00509829 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A917BB820936DDC38CA236FA /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 180F73F2F6BBD80169B3DB78;
 			remoteInfo = "LinzReverbs - Shared Code";
 		};
-		5E5AF7B63099C0FC00509829 /* PBXContainerItemProxy */ = {
+		5E5AF7E6309A3A2D00509829 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A917BB820936DDC38CA236FA /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 00607DC12BCD37A86816394E;
 			remoteInfo = "LinzReverbs - VST3 Manifest Helper";
 		};
-		5E5AF7B73099C0FC00509829 /* PBXContainerItemProxy */ = {
+		5E5AF7E7309A3A2D00509829 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A917BB820936DDC38CA236FA /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 180F73F2F6BBD80169B3DB78;
 			remoteInfo = "LinzReverbs - Shared Code";
 		};
-		5E5AF7B83099C0FC00509829 /* PBXContainerItemProxy */ = {
+		5E5AF7E8309A3A2D00509829 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A917BB820936DDC38CA236FA /* Project object */;
 			proxyType = 1;
@@ -223,6 +224,7 @@
 		1532FC60E766DD72F605675B /* include_juce_dsp.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_dsp.mm; path = ../../JuceLibraryCode/include_juce_dsp.mm; sourceTree = SOURCE_ROOT; };
 		1548DD29A4B97116E713D146 /* JucePluginDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JucePluginDefines.h; path = ../../JuceLibraryCode/JucePluginDefines.h; sourceTree = SOURCE_ROOT; };
 		162C38D5B156DE0A69731CFF /* include_juce_audio_plugin_client_AU_1.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_plugin_client_AU_1.mm; path = ../../JuceLibraryCode/include_juce_audio_plugin_client_AU_1.mm; sourceTree = SOURCE_ROOT; };
+		1715946087805744CE623CA0 /* ProgramManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ProgramManager.cpp; path = ../../Source/ProgramManager.cpp; sourceTree = SOURCE_ROOT; };
 		1919C14FD92D25D83DFB6423 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		19D1983FF1FAE402A8AFF87A /* ReverbLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ReverbLocation.h; path = ../../Source/ReverbLocation.h; sourceTree = SOURCE_ROOT; };
 		1A98504D23D8DF067628BC71 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -275,6 +277,7 @@
 		7FC6B42C50947E3FA4D551EF /* include_juce_graphics_Harfbuzz.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = include_juce_graphics_Harfbuzz.cpp; path = ../../JuceLibraryCode/include_juce_graphics_Harfbuzz.cpp; sourceTree = SOURCE_ROOT; };
 		80699F8B8DBBAAE6CBFDE442 /* Info-VST3_Manifest_Helper.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-VST3_Manifest_Helper.plist"; sourceTree = SOURCE_ROOT; };
 		83828FA7FC353CA3D66B918E /* JKU_Garage_Long.wav */ = {isa = PBXFileReference; lastKnownFileType = file.wav; name = JKU_Garage_Long.wav; path = "../../../IRs/JKU Parkgarage/JKU_Garage_Long.wav"; sourceTree = SOURCE_ROOT; };
+		843ACEC4814F4B60560B8C72 /* ProgramManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ProgramManager.h; path = ../../Source/ProgramManager.h; sourceTree = SOURCE_ROOT; };
 		85CBA44A047846CEB4A574B6 /* include_juce_audio_plugin_client_Standalone.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = include_juce_audio_plugin_client_Standalone.cpp; path = ../../JuceLibraryCode/include_juce_audio_plugin_client_Standalone.cpp; sourceTree = SOURCE_ROOT; };
 		87A0482740628FFC9003C960 /* RecentFilesMenuTemplate.nib */ = {isa = PBXFileReference; lastKnownFileType = file.nib; path = RecentFilesMenuTemplate.nib; sourceTree = SOURCE_ROOT; };
 		89088C512984583658FDBB2B /* include_juce_audio_formats_ogg.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = include_juce_audio_formats_ogg.c; path = ../../JuceLibraryCode/include_juce_audio_formats_ogg.c; sourceTree = SOURCE_ROOT; };
@@ -287,11 +290,11 @@
 		941977B4CB0057FCD64D3EBB /* LinzReverbs.vst3 */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinzReverbs.vst3; sourceTree = BUILT_PRODUCTS_DIR; };
 		946D186AD9EC7B6F484726B7 /* include_juce_audio_processors_headless.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_processors_headless.mm; path = ../../JuceLibraryCode/include_juce_audio_processors_headless.mm; sourceTree = SOURCE_ROOT; };
 		95009815220BD776B8646FB9 /* Info-AU.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-AU.plist"; sourceTree = SOURCE_ROOT; };
+		958A1FAB5C55304F5B1EDF72 /* Under_The_Bridge_Clap2.wav */ = {isa = PBXFileReference; lastKnownFileType = file.wav; name = Under_The_Bridge_Clap2.wav; path = "../../../IRs/Under The Bridge/Under_The_Bridge_Clap2.wav"; sourceTree = SOURCE_ROOT; };
 		98F5714D979413E8CA20D91D /* DiscRecording.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DiscRecording.framework; path = System/Library/Frameworks/DiscRecording.framework; sourceTree = SDKROOT; };
 		A0568F50CC5423D53766ADF1 /* JuceHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JuceHeader.h; path = ../../JuceLibraryCode/JuceHeader.h; sourceTree = SOURCE_ROOT; };
 		A45D876EEE1083D430EAA709 /* juce_audio_processors */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_audio_processors; path = "~/JUCE/modules/juce_audio_processors"; sourceTree = "<absolute>"; };
 		A6FAB2E0772ECBA3F0340F44 /* juce_audio_processors_headless */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_audio_processors_headless; path = "~/JUCE/modules/juce_audio_processors_headless"; sourceTree = "<absolute>"; };
-		A81977D44CD1A5A87BEE2766 /* Under_The_Bridge_Clap_2.wav */ = {isa = PBXFileReference; lastKnownFileType = file.wav; name = Under_The_Bridge_Clap_2.wav; path = "../../../IRs/Under The Bridge/Under_The_Bridge_Clap_2.wav"; sourceTree = SOURCE_ROOT; };
 		AC6516D9A96B9C6B0BCBE2AC /* include_juce_audio_processors_headless_ara.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = include_juce_audio_processors_headless_ara.cpp; path = ../../JuceLibraryCode/include_juce_audio_processors_headless_ara.cpp; sourceTree = SOURCE_ROOT; };
 		ACD29D1254CFE70325835F67 /* LinzReverbs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinzReverbs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2483E8667C2E2F953356FF3 /* JKU_Garage_Clap1.wav */ = {isa = PBXFileReference; lastKnownFileType = file.wav; name = JKU_Garage_Clap1.wav; path = "../../../IRs/JKU Parkgarage/JKU_Garage_Clap1.wav"; sourceTree = SOURCE_ROOT; };
@@ -464,7 +467,7 @@
 		13B5B3B5B8770434A1431CF4 /* Under The Bridge */ = {
 			isa = PBXGroup;
 			children = (
-				A81977D44CD1A5A87BEE2766 /* Under_The_Bridge_Clap_2.wav */,
+				958A1FAB5C55304F5B1EDF72 /* Under_The_Bridge_Clap2.wav */,
 				08587E8F86BDE672D5F1F4F5 /* Under_The_Bridge_Clap1.wav */,
 			);
 			name = "Under The Bridge";
@@ -485,6 +488,8 @@
 		2FC64CC6DDB517C377BC02F5 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				1715946087805744CE623CA0 /* ProgramManager.cpp */,
+				843ACEC4814F4B60560B8C72 /* ProgramManager.h */,
 				6BE6F9989845DC6C46E3B616 /* Data */,
 				F837DDEF2DF2EBCA222AFD19 /* PluginProcessor.cpp */,
 				50655E1F88E7B0F2A40DEB4B /* PluginProcessor.h */,
@@ -505,7 +510,7 @@
 			name = IRs;
 			sourceTree = "<group>";
 		};
-		5E5AF7AF3099C0FC00509829 /* Recovered References */ = {
+		5E5AF7DF309A3A2D00509829 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
 				B7B93946DB26BC18019C5B75 /* juce_VST3ManifestHelper.cpp */,
@@ -553,7 +558,7 @@
 				65C5AE209904A973CFF0B810 /* Resources */,
 				DD51B4210E3D34479D45A467 /* Frameworks */,
 				1CBA942B1CB8DE225A1B8557 /* Products */,
-				5E5AF7AF3099C0FC00509829 /* Recovered References */,
+				5E5AF7DF309A3A2D00509829 /* Recovered References */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -925,7 +930,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E5AF7AE3099C0FC00509829 /* RecentFilesMenuTemplate.nib in Resources */,
+				5E5AF7DE309A3A2D00509829 /* RecentFilesMenuTemplate.nib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -933,7 +938,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E5AF7AD3099C0FC00509829 /* RecentFilesMenuTemplate.nib in Resources */,
+				5E5AF7DD309A3A2D00509829 /* RecentFilesMenuTemplate.nib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1060,6 +1065,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F16939590DCCA12AC3F042F /* ProgramManager.cpp in Sources */,
 				06B3647D7CCC80FB076D4CA9 /* ReverbIR.cpp in Sources */,
 				37ACEE5CE194A3926890C64C /* ReverbLocation.cpp in Sources */,
 				8C95EA440AF0281EB9579A4C /* PluginProcessor.cpp in Sources */,
@@ -1154,47 +1160,47 @@
 		16F7031E11728279C0B73DDE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 7DD12FE83FED42907BF6D15E /* LinzReverbs - Standalone Plugin */;
-			targetProxy = 5E5AF7B23099C0FC00509829 /* PBXContainerItemProxy */;
+			targetProxy = 5E5AF7E2309A3A2D00509829 /* PBXContainerItemProxy */;
 		};
 		3335132E47F8C6B1DAE2E5D5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 7B9663F8DF28C6D5CEADDEE8 /* LinzReverbs - AU */;
-			targetProxy = 5E5AF7B13099C0FC00509829 /* PBXContainerItemProxy */;
+			targetProxy = 5E5AF7E1309A3A2D00509829 /* PBXContainerItemProxy */;
 		};
 		3C97A40BE87A3772F8671366 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 180F73F2F6BBD80169B3DB78 /* LinzReverbs - Shared Code */;
-			targetProxy = 5E5AF7B33099C0FC00509829 /* PBXContainerItemProxy */;
+			targetProxy = 5E5AF7E3309A3A2D00509829 /* PBXContainerItemProxy */;
 		};
 		548EF2BBCD2A2EDB633213E9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 180F73F2F6BBD80169B3DB78 /* LinzReverbs - Shared Code */;
-			targetProxy = 5E5AF7B83099C0FC00509829 /* PBXContainerItemProxy */;
+			targetProxy = 5E5AF7E8309A3A2D00509829 /* PBXContainerItemProxy */;
 		};
 		5A4EF59AFCA10E646E48986F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 180F73F2F6BBD80169B3DB78 /* LinzReverbs - Shared Code */;
-			targetProxy = 5E5AF7B53099C0FC00509829 /* PBXContainerItemProxy */;
+			targetProxy = 5E5AF7E5309A3A2D00509829 /* PBXContainerItemProxy */;
 		};
 		98BA539B76AC11051C4FB074 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 00607DC12BCD37A86816394E /* LinzReverbs - VST3 Manifest Helper */;
-			targetProxy = 5E5AF7B43099C0FC00509829 /* PBXContainerItemProxy */;
+			targetProxy = 5E5AF7E4309A3A2D00509829 /* PBXContainerItemProxy */;
 		};
 		C4A46362222D08C1889C9123 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 00607DC12BCD37A86816394E /* LinzReverbs - VST3 Manifest Helper */;
-			targetProxy = 5E5AF7B63099C0FC00509829 /* PBXContainerItemProxy */;
+			targetProxy = 5E5AF7E6309A3A2D00509829 /* PBXContainerItemProxy */;
 		};
 		F671E2E4D93247B8CD7FADBD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F72CFF95CBA98D0AF2B72D78 /* LinzReverbs - VST3 */;
-			targetProxy = 5E5AF7B03099C0FC00509829 /* PBXContainerItemProxy */;
+			targetProxy = 5E5AF7E0309A3A2D00509829 /* PBXContainerItemProxy */;
 		};
 		F962EEACE377E0B082EA1467 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 180F73F2F6BBD80169B3DB78 /* LinzReverbs - Shared Code */;
-			targetProxy = 5E5AF7B73099C0FC00509829 /* PBXContainerItemProxy */;
+			targetProxy = 5E5AF7E7309A3A2D00509829 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1673,7 +1679,7 @@
 		42A8944777C9207CA98ADC6C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -2412,7 +2418,7 @@
 		E6D0917C3947545187A65415 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				SDKROOT = macosx;
 			};
 			name = Release;

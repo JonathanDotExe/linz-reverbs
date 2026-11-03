@@ -9,6 +9,8 @@
 #pragma once
 
 #include <JuceHeader.h>
+#include "ProgramManager.h"
+#include <memory>
 
 //==============================================================================
 /**
@@ -71,6 +73,8 @@ private:
         juce::dsp::Oscillator<float>,
         juce::dsp::Convolution,
         juce::dsp::Gain<float>> processorChain;
+    
+    std::unique_ptr<ProgramManager> progManager;
     
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (LinzReverbsAudioProcessor)
 };

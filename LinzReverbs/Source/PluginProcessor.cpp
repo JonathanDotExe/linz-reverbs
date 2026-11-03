@@ -27,15 +27,19 @@ LinzReverbsAudioProcessor::LinzReverbsAudioProcessor()
     osc.initialise ([this] (double x) { return random.nextFloat(); });
     osc.setFrequency(440.0);
     auto& conv = processorChain.template get<convIndex>();
-    conv.loadImpulseResponse(
-        BinaryData::Under_The_Bridge_Clap1_wav,
-        BinaryData::Under_The_Bridge_Clap_2_wavSize,
-        juce::dsp::Convolution::Stereo::yes,
-        juce::dsp::Convolution::Trim::yes,
-        0
-    );
+
     auto& gain = processorChain.template get<gainIndex>();
     gain.setGainLinear(1);
+    
+    progManager = std::unique_ptr<ProgramManager>(new ProgramManager([&conv](const ReverbIR& reverb) {
+        conv.loadImpulseResponse(
+            reverb.data,
+            reverb.size,
+            juce::dsp::Convolution::Stereo::yes,
+            juce::dsp::Convolution::Trim::yes,
+            0
+        );
+    }));
 }
 
 LinzReverbsAudioProcessor::~LinzReverbsAudioProcessor()
@@ -78,7 +82,7 @@ bool LinzReverbsAudioProcessor::isMidiEffect() const
 
 double LinzReverbsAudioProcessor::getTailLengthSeconds() const
 {
-    return 4.0; //TODO reverb tail length
+    return 6.0; //TODO reverb tail length
 }
 
 // presets

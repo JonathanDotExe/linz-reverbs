@@ -17,8 +17,8 @@ class ReverbIR {
 public:
     const std::string name;
     const char* data;
-    const size_t size;
+    const int size;
     
-    ReverbIR(const std::string name, const char* data, const size_t size);
+    ReverbIR(const std::string name, const char* data, const int size);
     
 };

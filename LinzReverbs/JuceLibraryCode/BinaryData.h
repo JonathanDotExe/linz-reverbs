@@ -32,8 +32,8 @@ namespace BinaryData
     extern const char*   JKU_Garage_Short_wav;
     const int            JKU_Garage_Short_wavSize = 1156952;
 
-    extern const char*   Under_The_Bridge_Clap_2_wav;
-    const int            Under_The_Bridge_Clap_2_wavSize = 544994;
+    extern const char*   Under_The_Bridge_Clap2_wav;
+    const int            Under_The_Bridge_Clap2_wavSize = 544994;
 
     extern const char*   Under_The_Bridge_Clap1_wav;
     const int            Under_The_Bridge_Clap1_wavSize = 667574;

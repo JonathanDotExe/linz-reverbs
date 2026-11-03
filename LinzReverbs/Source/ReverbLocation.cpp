@@ -13,5 +13,5 @@
 ReverbLocation::ReverbLocation(const std::string name, const std::vector<ReverbIR> irs)
     : name(name), irs(irs)
 {
-        
+    
 }

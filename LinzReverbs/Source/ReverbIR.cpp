@@ -10,7 +10,7 @@
 
 #include "ReverbIR.h"
 
-ReverbIR::ReverbIR(const std::string name, const char* data, const size_t size)
+ReverbIR::ReverbIR(const std::string name, const char* data, const int size)
     : name(name), data(data), size(size)
 {
     

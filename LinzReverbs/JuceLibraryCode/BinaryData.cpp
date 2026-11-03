@@ -52538,7 +52538,7 @@ const char* getNamedResource (const char* resourceNameUTF8, int& numBytes)
         case 0xe552ec9a:  numBytes = 968582; return JKU_Garage_Clap2_wav;
         case 0xffaf3db6:  numBytes = 1592996; return JKU_Garage_Long_wav;
         case 0x75b8273c:  numBytes = 1156952; return JKU_Garage_Short_wav;
-        case 0x62043c79:  numBytes = 544994; return Under_The_Bridge_Clap_2_wav;
+        case 0xa5ed6226:  numBytes = 544994; return Under_The_Bridge_Clap2_wav;
         case 0xa5df4aa5:  numBytes = 667574; return Under_The_Bridge_Clap1_wav;
         case 0x66cba426:  numBytes = 1418102; return ARS_Long_wav;
         default: break;
@@ -52558,7 +52558,7 @@ const char* namedResourceList[] =
     "JKU_Garage_Clap2_wav",
     "JKU_Garage_Long_wav",
     "JKU_Garage_Short_wav",
-    "Under_The_Bridge_Clap_2_wav",
+    "Under_The_Bridge_Clap2_wav",
     "Under_The_Bridge_Clap1_wav",
     "ARS_Long_wav"
 };
@@ -52573,7 +52573,7 @@ const char* originalFilenames[] =
     "JKU_Garage_Clap2.wav",
     "JKU_Garage_Long.wav",
     "JKU_Garage_Short.wav",
-    "Under_The_Bridge_Clap_2.wav",
+    "Under_The_Bridge_Clap2.wav",
     "Under_The_Bridge_Clap1.wav",
     "ARS_Long.wav"
 };

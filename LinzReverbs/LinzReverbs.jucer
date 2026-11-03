@@ -26,8 +26,8 @@
                 file="../IRs/JKU Parkgarage/JKU_Garage_Short.wav"/>
         </GROUP>
         <GROUP id="{F2DB3B48-01FD-E737-1E9D-7FB03109089F}" name="Under The Bridge">
-          <FILE id="ZIfgdM" name="Under_The_Bridge_Clap_2.wav" compile="0" resource="1"
-                file="../IRs/Under The Bridge/Under_The_Bridge_Clap_2.wav"/>
+          <FILE id="ZIfgdM" name="Under_The_Bridge_Clap2.wav" compile="0" resource="1"
+                file="../IRs/Under The Bridge/Under_The_Bridge_Clap2.wav"/>
           <FILE id="rpMOzH" name="Under_The_Bridge_Clap1.wav" compile="0" resource="1"
                 file="../IRs/Under The Bridge/Under_The_Bridge_Clap1.wav"/>
         </GROUP>
@@ -37,6 +37,10 @@
       </GROUP>
     </GROUP>
     <GROUP id="{C7AC4E2A-453F-BBC7-A1CA-C43F00A18DC7}" name="Source">
+      <FILE id="U21pV2" name="ProgramManager.cpp" compile="1" resource="0"
+            file="Source/ProgramManager.cpp"/>
+      <FILE id="g9wEMY" name="ProgramManager.h" compile="0" resource="0"
+            file="Source/ProgramManager.h"/>
       <GROUP id="{F0177D25-94B0-FC0D-28EE-F6887CE7F0B2}" name="Data">
         <FILE id="sZDaM6" name="ReverbIR.cpp" compile="1" resource="0" file="Source/ReverbIR.cpp"/>
         <FILE id="wJEKLW" name="ReverbIR.h" compile="0" resource="0" file="Source/ReverbIR.h"/>
