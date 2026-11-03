@@ -63,14 +63,14 @@ public:
 private:
     //==============================================================================
     enum {
-        oscIndex,
+        //oscIndex,
         convIndex,
         gainIndex
     };
     
     juce::Random random;
     juce::dsp::ProcessorChain<
-        juce::dsp::Oscillator<float>,
+        //juce::dsp::Oscillator<float>,
         juce::dsp::Convolution,
         juce::dsp::Gain<float>> processorChain;
     

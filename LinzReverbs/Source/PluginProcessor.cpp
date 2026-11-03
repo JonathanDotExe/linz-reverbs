@@ -23,15 +23,16 @@ LinzReverbsAudioProcessor::LinzReverbsAudioProcessor()
                        )
 #endif
 {
-    auto& osc = processorChain.template get<oscIndex>();
-    osc.initialise ([this] (double x) { return random.nextFloat(); });
-    osc.setFrequency(440.0);
-    auto& conv = processorChain.template get<convIndex>();
+    //auto& osc = processorChain.template get<oscIndex>();
+    //osc.initialise ([this] (double x) { return random.nextFloat(); });
+    //osc.setFrequency(440.0);
 
     auto& gain = processorChain.template get<gainIndex>();
     gain.setGainLinear(1);
     
-    progManager = std::unique_ptr<ProgramManager>(new ProgramManager([&conv](const ReverbIR& reverb) {
+    progManager = std::unique_ptr<ProgramManager>(new ProgramManager([this](const ReverbIR& reverb) {
+        auto& conv = processorChain.template get<convIndex>();
+
         conv.loadImpulseResponse(
             reverb.data,
             reverb.size,
@@ -189,8 +190,10 @@ void LinzReverbsAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer, 
     }*/
 
     
-    buffer.clear();
+    //buffer.clear();
 
+    //processorChain.setBypassed<oscIndex>(true);
+    
     juce::dsp::AudioBlock<float> block(buffer);
     juce::dsp::ProcessContextReplacing<float> context(block);
 
